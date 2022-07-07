@@ -1,4 +1,4 @@
-# CodigosDiversos
+# Códigos Diversos
 Repositório de códigos de assuntos diversos.
 
 > 1 Código: AbreProgramasPython.py
