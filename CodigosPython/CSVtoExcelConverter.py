@@ -4,7 +4,7 @@ from datetime import datetime
 import logging
 
 # Configurando o arquivo de LOG
-logging.basicConfig(filename='CSVtoExecelConverter.log', format='%(asctime)s - %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.INFO)
+logging.basicConfig(filename='CSVtoExcelConverter.log', format='%(asctime)s - %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.INFO)
 print('INICIO - ', datetime.today().strftime('%d-%m-%Y %H:%M:%S'))
 # Ler arquivo CSV
 arquivoCSV = pd.read_csv('arquivo.csv')
