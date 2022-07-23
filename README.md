@@ -24,5 +24,5 @@ Python:
 > CSVtoExcelConverter.py <a id="CSVtoExcelConverter"></a>
  1. Instalar pacotes numpy e pandas: `pip install numpy` e `pip install pandas`
  2. Trocar o texto arquivo.csv na linha 10 (`arquivoCSV = pd.read_csv('arquivo.csv')`) pelo nome do arquivo que se deseja converter
- 3. Caso deseje outro nome para o arquivo de Excel, trocar o texto arquivoNovo_ na linha 16 (`nomeArquivoExcel = 'arquivoNovo_' + datetime.today().strftime('%Y-%m-%d') + '.xlsx'`) pelo nome escolido
+ 3. Caso deseje outro nome para o arquivo de Excel, trocar o texto arquivoNovo_ na linha 16 (`nomeArquivoExcel = 'arquivoNovo_' + datetime.today().strftime('%Y-%m-%d') + '.xlsx'`) pelo nome escolhido
  4. Executar o código irá gerar na pasta do código o arquivo convertido e o arquivo de LOG da execução
