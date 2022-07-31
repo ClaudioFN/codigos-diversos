@@ -40,5 +40,5 @@ Typescript:
  3. Caso deseje outro nome para o arquivo de Excel, trocar o texto arquivoNovo_ na linha 16 (`nomeArquivoExcel = 'arquivoNovo_' + datetime.today().strftime('%Y-%m-%d') + '.xlsx'`) pelo nome escolhido
  4. Executar o código irá gerar na pasta do código o arquivo convertido e o arquivo de LOG da execução
 
-> VariableDeclaration.ts <a id="VariableDeclaration.ts"></a>
+> VariableDeclaration.ts <a id="VariableDeclaration"></a>
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
