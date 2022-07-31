@@ -1,12 +1,25 @@
 # Códigos Diversos
 Repositório de códigos de assuntos diversos.
 
+Java:
+- [WEBCrowler](#WEBCrowler)
+
 Python:
 - [AbreProgramasPython](#AbreProgramasPython)
 - [CotacaoDolar](#CotacaoDolar) 
 - [CSVtoExcelConverter](#CSVtoExcelConverter)
 
+Typescript:
+- [VariableDeclaration](#VariableDeclaration)
+
 **Listagem de códigos**
+
+> WEBCrowler <a id="WEBCrowler"></a>
+1. StartWebCrawler.java - classe com o método `main` para executar o código, onde conseguimos definir a URL de partida e o limite de acessos
+2. WebCrawler.java - classe com os detalhes da execução do Web Crawler
+3. Realizar o import de todos as packages contidas no início de cada classe
+4. Executar a classe StartWebCrawler.java (ter Java e o Java JDK instalados)
+5. Será gerado arquivo de LOG de todas as URLs encontradas na pesquisa de URLs disponíveis a partir da primeira URL fornecida no método `main`
 
 > AbreProgramasPython.py <a id="AbreProgramasPython"></a>
   
@@ -26,3 +39,6 @@ Python:
  2. Trocar o texto arquivo.csv na linha 10 (`arquivoCSV = pd.read_csv('arquivo.csv')`) pelo nome do arquivo que se deseja converter
  3. Caso deseje outro nome para o arquivo de Excel, trocar o texto arquivoNovo_ na linha 16 (`nomeArquivoExcel = 'arquivoNovo_' + datetime.today().strftime('%Y-%m-%d') + '.xlsx'`) pelo nome escolhido
  4. Executar o código irá gerar na pasta do código o arquivo convertido e o arquivo de LOG da execução
+
+> VariableDeclaration.ts <a id="VariableDeclaration.ts"></a>
+1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
