@@ -4,20 +4,15 @@ import plotly.express as px
 import streamlit as st
 
 """
-pip install plotly-express -> instalar o pacote no computador
-pip install streamlit -> instalar os pacotes relacionados ao Streamlit
-
-Video explicativo do assunto -> YouTube: youtu.be/Qxm5QEEKHqE
-
-streamlit é usado junto com a plataforma online e tem sincronização com o GitHub. Criar conta, sincronizar o Streamlit com o GitHub e colocar o projeto em um 
-repositório para ser executado nele.
+streamlit ï¿½ usado junto com a plataforma online e tem sincronizaï¿½ï¿½o com o GitHub. Criar conta, sincronizar o Streamlit com o GitHub e colocar o projeto em um 
+repositï¿½rio para ser executado nele.
 """
 
 # Ler o Dataset
 df = pd.read_csv('https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv')
 
 # Nomenclatura de colunas
-df = df.rename(columns={'newDeaths': 'Novos Óbitos', 'newCases': 'Novos Casos', 'deaths_per_100k_inhabitants': 'Óbitos a Cada 100 mil Habitantes', 'totalCases_per_100k_inhabitants': 'Casos a Cada 100 mil Habitantes'})
+df = df.rename(columns={'newDeaths': 'Novos ï¿½bitos', 'newCases': 'Novos Casos', 'deaths_per_100k_inhabitants': 'ï¿½bitos a Cada 100 mil Habitantes', 'totalCases_per_100k_inhabitants': 'Casos a Cada 100 mil Habitantes'})
 
 # Selecao de Estados
 # state = 'RJ' -- comentado para adicionar a linha 18
@@ -26,8 +21,8 @@ state = st.sidebar.selectbox('Qual Estado Gostaria de Ver?', estados)
 
 # Selecao de Colunas
 # column = 'Casos a Cada 100 mil Habitantes' -- comentado para adicionar a linha 23
-colunas = ['Novos Óbitos', 'Novos Casos', 'Óbitos a Cada 100 mil Habitantes', 'Total de Casos a cada 100 mil Habitantes']
-column = st.sidebar.selectbox('Qual Informação Gostaria de Ver?', colunas)
+colunas = ['Novos ï¿½bitos', 'Novos Casos', 'ï¿½bitos a Cada 100 mil Habitantes', 'Total de Casos a cada 100 mil Habitantes']
+column = st.sidebar.selectbox('Qual Informaï¿½ï¿½o Gostaria de Ver?', colunas)
 
 # Selecao das linhas do estado selecionado
 df = df[df['state'] == state] 
@@ -38,8 +33,8 @@ fig.update_layout(xaxis_title='Data', yaxis_title=column.upper(), title={'x': 0.
 # print('DADOS COVID - BRASIL') -- comentado para adicionar a linha 32
 st.title('DADOS COVID - BRASIL')
 
-#print('Nessa aplicação, o usuário escolhe o estado e a informação que deseja ter acesso. Para isso, verifique o menu lateral.')  -- comentado para adicionar a linha 35
-st.write('Nessa aplicação, o usuário escolhe o estado e a informação que deseja ter acesso. Para isso, verifique o menu lateral.')
+#print('Nessa aplicaï¿½ï¿½o, o usuï¿½rio escolhe o estado e a informaï¿½ï¿½o que deseja ter acesso. Para isso, verifique o menu lateral.')  -- comentado para adicionar a linha 35
+st.write('Nessa aplicaï¿½ï¿½o, o usuï¿½rio escolhe o estado e a informaï¿½ï¿½o que deseja ter acesso. Para isso, verifique o menu lateral.')
 
 # fig.show() -- comentado para adicionar a linha 38
 st.plotly_chart(fig, use_container_width=True)
