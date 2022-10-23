@@ -4,17 +4,17 @@ Repositório de códigos de assuntos diversos.
 <a id="inicio"></a>
 
 Java (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
-- Acessar Reumo: [WEBCrowler](#WEBCrowler) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">WEBCrowler</a>
+- Acessar Resumo: [WEBCrowler](#WEBCrowler) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">WEBCrowler</a>
 
 Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
-- Acessar Reumo: [AbreProgramasPython](#AbreProgramasPython) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">AbreProgramasPython</a>
-- Acessar Reumo: [CotacaoDolar](#CotacaoDolar) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">CotacaoDolar</a>
-- Acessar Reumo: [CSVtoExcelConverter](#CSVtoExcelConverter) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">CSVtoExcelConverter</a>
-- Acessar Reumo: [GraficoInterativo](#GraficoInterativo) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">GraficoInterativo</a>
-- Acessar Reumo: [IoTMachineLeaning](#IoTMachineLeaning) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTMachineLeaning</a>
+- Acessar Resumo: [AbreProgramasPython](#AbreProgramasPython) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">AbreProgramasPython</a>
+- Acessar Resumo: [CotacaoDolar](#CotacaoDolar) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">CotacaoDolar</a>
+- Acessar Resumo: [CSVtoExcelConverter](#CSVtoExcelConverter) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">CSVtoExcelConverter</a>
+- Acessar Resumo: [GraficoInterativo](#GraficoInterativo) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">GraficoInterativo</a>
+- Acessar Resumo: [IoTMachineLeaning](#IoTMachineLeaning) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTMachineLeaning</a>
 
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
-- Acessar Reumo: [VariableDeclaration](#VariableDeclaration) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">VariableDeclaration</a>
+- Acessar Resumo: [VariableDeclaration](#VariableDeclaration) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">VariableDeclaration</a>
 
 **Listagem de códigos**
 
