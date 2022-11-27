@@ -12,6 +12,7 @@ Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigo
 - Acessar Resumo: [CSVtoExcelConverter](#CSVtoExcelConverter) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">CSVtoExcelConverter</a>
 - Acessar Resumo: [GraficoInterativo](#GraficoInterativo) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">GraficoInterativo</a>
 - Acessar Resumo: [IoTMachineLeaning](#IoTMachineLeaning) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTMachineLeaning</a>
+- Acessar Resumo: [IoTFacialRecognition](#IoTFacialRecognition) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTFacialRecognition</a>
 
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - Acessar Resumo: [VariableDeclaration](#VariableDeclaration) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">VariableDeclaration</a>
@@ -56,6 +57,11 @@ Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Cod
  1. Instalar o pacote de audio: `pip install SpeechRecognition`
  2. Instalar arquivo baixado no site [UCI - PACOTES DE ÁUDIO](https://www.lfd.uci.edu/~gohlke/pythonlibs/). Baixar de acordo com seu chipset (x32 | x64) e versão do Python: `pip install <DIRETORIO DO DOWNLOAD SEM ESPAÇOS COM NOME DO ARQUIVO BAIXADO>`
  3. Criar executável do código (executar comando na pasta onde o arquivo está, depois de já ter o PyInstaller no computador): `pyinstaller --onefile IoTMachineLeaning.py`
+
+IoTFacialRecognition.py <a id="IoTFacialRecognition"></a> [Voltar ao Início](#inicio)
+ 1. Obrigatório ter uma webcam para operar esse programa.
+ 2. Programa pronto para executar. Apenas use de preferência o [Google Colaboratory](https://colab.research.google.com) para executar o código.
+ 3. Carregar o programa no ambiente do Google Colab e executar tudo de uma vez. 
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
