@@ -4,18 +4,20 @@ Repositório de códigos de assuntos diversos.
 <a id="inicio"></a>
 
 Java (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
-- Acessar Resumo: [WEBCrowler](#WEBCrowler) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">WEBCrowler</a>
+- WEBCrowler: [Acessar Resumo](#WEBCrowler) |  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
-- Acessar Resumo: [AbreProgramasPython](#AbreProgramasPython) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">AbreProgramasPython</a>
-- Acessar Resumo: [CotacaoDolar](#CotacaoDolar) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">CotacaoDolar</a>
-- Acessar Resumo: [CSVtoExcelConverter](#CSVtoExcelConverter) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">CSVtoExcelConverter</a>
-- Acessar Resumo: [GraficoInterativo](#GraficoInterativo) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">GraficoInterativo</a>
-- Acessar Resumo: [IoTMachineLeaning](#IoTMachineLeaning) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTMachineLeaning</a>
-- Acessar Resumo: [IoTFacialRecognition](#IoTFacialRecognition) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/" target="_blank" rel="noopener noreferrer">IoTFacialRecognition</a>
+- AbreProgramasPython: [Acessar Resumo](#AbreProgramasPython) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- CotacaoDolar: [Acessar Resumo](#CotacaoDolar) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- CSVtoExcelConverter: [Acessar Resumo](#CSVtoExcelConverter) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- GraficoInterativo: [Acessar Resumo](#GraficoInterativo) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- IoTMachineLeaning: [Acessar Resumo](#IoTMachineLeaning) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/IoTMachineLeaning.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- IoTFacialRecognition: [Acessar Resumo](#IoTFacialRecognition) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/IoTFacialRecognition.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+- ImageCreationWithOpenAI: [Acessar Resumo](#ImageCreationWithOpenAI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ImageCreationWithOpenAI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
-- Acessar Resumo: [VariableDeclaration](#VariableDeclaration) | Acessar Código:  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">VariableDeclaration</a>
+- VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 **Listagem de códigos**
 
@@ -58,10 +60,15 @@ Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Cod
  2. Instalar arquivo baixado no site [UCI - PACOTES DE ÁUDIO](https://www.lfd.uci.edu/~gohlke/pythonlibs/). Baixar de acordo com seu chipset (x32 | x64) e versão do Python: `pip install <DIRETORIO DO DOWNLOAD SEM ESPAÇOS COM NOME DO ARQUIVO BAIXADO>`
  3. Criar executável do código (executar comando na pasta onde o arquivo está, depois de já ter o PyInstaller no computador): `pyinstaller --onefile IoTMachineLeaning.py`
 
-IoTFacialRecognition.py <a id="IoTFacialRecognition"></a> [Voltar ao Início](#inicio)
+> IoTFacialRecognition.py <a id="IoTFacialRecognition"></a> [Voltar ao Início](#inicio)
  1. Obrigatório ter uma webcam para operar esse programa.
  2. Programa pronto para executar. Apenas use de preferência o [Google Colaboratory](https://colab.research.google.com) para executar o código.
  3. Carregar o programa no ambiente do Google Colab e executar tudo de uma vez. 
+
+> ImageCreationWithOpenAI.py <a id="ImageCreationWithOpenAI"></a> [Voltar ao Início](#inicio)
+ 1. Instalar o pacote OpenAI: `pip install openai`.
+ 2. Para execução do código, é obrigatório ter uma chave da API da OpenAI no trecho do código com as palavras `YOUR API KEY FROM OPENAI HERE`. Essa chave está disponível no próprio site da [API da OpenAI](https://openai.com/api/).
+ 3. Para a execução do trecho para o tratamento de imagens, é obrigatório ter a imagem disponível de preferência na mesma pasta onde o arquivo do código se encontra e nomeá-lo em `image.png` (trecho dentro do código). 
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
