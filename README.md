@@ -16,6 +16,8 @@ Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigo
 
 - ImageCreationWithOpenAI: [Acessar Resumo](#ImageCreationWithOpenAI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ImageCreationWithOpenAI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- PhoneNumberID: [Acessar Resumo](#PhoneNumberID) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/PhoneNumberID.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -69,6 +71,12 @@ Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Cod
  1. Instalar o pacote OpenAI: `pip install openai`.
  2. Para execução do código, é obrigatório ter uma chave da API da OpenAI no trecho do código com as palavras `YOUR API KEY FROM OPENAI HERE`. Essa chave está disponível no próprio site da [API da OpenAI](https://openai.com/api/).
  3. Para a execução do trecho para o tratamento de imagens, é obrigatório ter a imagem disponível de preferência na mesma pasta onde o arquivo do código se encontra e nomeá-lo em `image.png` (trecho dentro do código). 
+
+> PhoneNumberID.py <a id="PhoneNumberID"></a> [Voltar ao Início](#inicio)
+- <b>Resumo:</b> Recebe números de telefone em determinado formato e devolve a Operadora e a Região ao qual o número digitado pertence.
+ 1. Instalar o pacote PhoneNumbers: `pip install phonenumbers`.
+ 2. Ao executar o código, será solicitado que se digite o número de telefone do qual se deseja identificaççai, considerando o padrão +CCAANNNNNNNNN onde o + é o sinal internacional, C é o código do país, A é o código da região e N é o número do telefone com até 9 dígitos.
+ 3. Serão feitas solicitaçãos consecutivas para digitação do número de telefone. O programa se encerra se ao invés de digitar o número de telefone for digitado a palavra.
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
