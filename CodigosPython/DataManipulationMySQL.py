@@ -12,7 +12,7 @@ try:
   POSITION = 10
   mydb = mysql.connector.connect(
     host="localhost-or-127.0.0.1",
-    database="optional-database-name,
+    database="optional-database-name",
     port="optional-port",
     user="user-from-your-database",
     password="password-to-your-database"
@@ -32,13 +32,13 @@ try:
     cursor = mydb.cursor()
 
     """
-    Create the Database
+    Create the Database and Use Database
     """
     POSITION = 55
-    cursor.execute("CREATE DATABASE test")
+    cursor.execute("CREATE DATABASE the-name-of-your-database")
 
     POSITION = 60
-    cursor.execute("USE test")
+    cursor.execute("USE the-name-of-your-database")
     
     # Make a select
     POSITION = 60

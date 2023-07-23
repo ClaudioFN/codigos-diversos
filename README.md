@@ -10,9 +10,7 @@ Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigo
 - AbreProgramasPython: [Acessar Resumo](#AbreProgramasPython) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - CotacaoDolar: [Acessar Resumo](#CotacaoDolar) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - CSVtoExcelConverter: [Acessar Resumo](#CSVtoExcelConverter) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
-
 - DataManipulationMySQL: [Acessar Resumo](#DataManipulationMySQL) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/DataManipulationMySQL.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
-
 - GraficoInterativo: [Acessar Resumo](#GraficoInterativo) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - IoTMachineLeaning: [Acessar Resumo](#IoTMachineLeaning) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/IoTMachineLeaning.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - IoTFacialRecognition: [Acessar Resumo](#IoTFacialRecognition) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/IoTFacialRecognition.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -63,10 +61,12 @@ Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Cod
  4. Executar o código irá gerar na pasta do código o arquivo convertido e o arquivo de LOG da execução
  
  > DataManipulationMySQL.py <a id="DataManipulationMySQL"></a> [Voltar ao Início](#inicio)
+
  - <b>Resumo:</b> Teste de manipulação de banco de dados usando Python + MySQL
+
  1. Instalar o pacote MySQL Connector: `pip install mysql-connector-python`
  2. Trocar os nomes dos dados do banco de dados na área `Connect to the MySQL Database`
- 3. Caso banco deva ser criado durante a execução, alterar a área `Create the Database` ou comentar caso contrário
+ 3. Caso banco deva ser criado durante a execução, alterar a área `Create the Database and Use Database` ou comentar caso contrário
  4. Toda a manipulação já está pronta para uso e o fechamento de conexões será automático
 
  > GraficoInterativo.py <a id="GraficoInterativo"></a> [Voltar ao Início](#inicio)
