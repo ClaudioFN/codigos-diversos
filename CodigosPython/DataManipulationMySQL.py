@@ -4,10 +4,10 @@ Install the package: pip install mysql-connector-python
 """
 import mysql.connector
 from mysql.connector import Error
+POSITION = 0
 """
  Connect to the MySQL Database
 """
-POSITION = 0
 try:
   POSITION = 10
   mydb = mysql.connector.connect(
@@ -32,7 +32,7 @@ try:
     cursor = mydb.cursor()
 
     """
-    Create the Database and Use Database
+    Create the Database and Use Database - COMMENT 55 AND 60 POSITIONS IF A DATABASE IS ALREADY SET IN THE CONFIGURATION SECTION
     """
     POSITION = 55
     cursor.execute("CREATE DATABASE the-name-of-your-database")
@@ -41,9 +41,10 @@ try:
     cursor.execute("USE the-name-of-your-database")
     
     # Make a select
-    POSITION = 60
+    POSITION = 65
     cursor.execute("select database();")
     record = cursor.fetchone()
+
     # Show results
     print("You are connected to the ", record ," database.")
     
@@ -118,9 +119,11 @@ try:
     
 except Error as e:
   # Error found during connection process
-  print("Error in the position", POSITION,": ", e)
+  print("Error in the position ", POSITION,": ", e)
 finally:
   if mydb.is_connected():
     cursor.close()
     mydb.close()
-    print("MySQL connection closed!")
+    print("MySQL connection closed! Program closed.")
+  else 
+    print("Program closed.")
