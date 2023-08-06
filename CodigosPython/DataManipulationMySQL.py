@@ -4,10 +4,20 @@ Install the package: pip install mysql-connector-python
 """
 import mysql.connector
 from mysql.connector import Error
-POSITION = 0
+import logging
+from datetime import datetime
+"""
+Configuration of the log archive
+"""
+logging.basicConfig(filename='DataManipulationMySQL_'+datetime.today().strftime('%d-%m-%Y')+'.log', format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=0)
+logging.info('\nBegging - '+ datetime.today().strftime('%d-%m-%Y %H:%M:%S'))
+print('Begging - ', datetime.today().strftime('%d-%m-%Y %H:%M:%S'))
 """
  Connect to the MySQL Database
 """
+DB_NAME = "test"
+logging.info('Connecting to the MySQL')
+POSITION = 0
 try:
   POSITION = 10
   mydb = mysql.connector.connect(
@@ -27,31 +37,50 @@ try:
     db_info = mydb.get_server_info()
     print("Connected to MySQL Server version: ", db_info)
     
+    logging.info('Connection created successfully!')
+    
     # Initialize the cursor
     POSITION = 50
     cursor = mydb.cursor()
-
     """
-    Create the Database and Use Database - COMMENT 55 AND 60 POSITIONS IF A DATABASE IS ALREADY SET IN THE CONFIGURATION SECTION
+    Create the Database and Use It
     """
-    POSITION = 55
-    cursor.execute("CREATE DATABASE the-name-of-your-database")
-
+    # Check if the database exists before creating it
     POSITION = 60
-    cursor.execute("USE the-name-of-your-database")
+    found_db = False
+    cursor.execute("SHOW DATABASES")
+    
+    POSITION = 70
+    for dbs in cursor:
+      if dbs == DB_NAME:
+        found_db = True
+    
+    POSITION = 80
+    if found_db:
+      print("Database exists! Just use it!")
+    else :
+        POSITION = 90
+        print("Database "+DB_NAME+" doesn't exist, creating now...")
+        
+        POSITION = 100
+        cursor.execute("CREATE DATABASE IF NOT EXISTS "+DB_NAME)
+        print("Database "+DB_NAME+" created!")
+        
+    POSITION = 110
+    cursor.execute("USE "+DB_NAME)
     
     # Make a select
-    POSITION = 65
+    POSITION = 120
     cursor.execute("select database();")
     record = cursor.fetchone()
-
     # Show results
     print("You are connected to the ", record ," database.")
     
+    logging.info('Database connected successfully!')
     """
     Creating a new table if not exists
     """
-    POSITION = 70
+    POSITION = 130
     create_table = """CREATE TABLE IF NOT EXISTS notebook (
       id int(10) NOT NULL,
       company_name varchar(250) NOT NULL,
@@ -65,14 +94,17 @@ try:
       total_available int(5),
       PRIMARY KEY (id)
       )"""
-    POSITION = 80
+    POSITION = 140
     result_table_creation = cursor.execute(create_table)
     print("Notebook table created successfully! ", result_table_creation)
+    
+    
+    logging.info('Table NOTEBOOK created successfully!')
     
     """
     Inserting data in the NOTEBOOK table
     """
-    POSITION = 90
+    POSITION = 150
     insert_data = """ INSERT INTO notebook (
       id, company_name, product_name,
       price, ram_memory, rom_memory,
@@ -85,25 +117,29 @@ try:
         'Linux', 'NVIDIA GeForce GTX 1650 4GB', 'Intel Core i5-10300H',
         2
       )"""
-    POSITION = 100
+    POSITION = 160
     cursor.execute(insert_data)
     
-    POSITION = 110
+    POSITION = 150
     mydb.commit()
     print(cursor.rowcount, " - Data inserted successfully into the Notebook table!")
+    
+    logging.info('Data inserted in the table successfully!')
     
     """
     Select from the notebook table
     """
-    POSITION = 120
+    POSITION = 170
     select_query = """ SELECT * FROM notebook """
     cursor.execute(select_query)
     
-    POSITION = 130
+    POSITION = 180
     records = cursor.fetchall()
     print("Rows in the table: ", cursor.rowcount)
     
-    POSITION = 140
+    logging.info('Data retrieved from the table successfully!')
+    
+    POSITION = 200
     print("\nShow data of each row: ")
     for row in records:
       print("ID = ", row[0])
@@ -116,14 +152,18 @@ try:
       print("Video Card = ", row[7])
       print("Processor = ", row[8])
       print("Total Available = ", row[9], "\n")
-    
+  else:
+    logging.info('Failed to connect!')
 except Error as e:
   # Error found during connection process
+  position_err = str(POSITION)
+  logging.error("Something went wrong in the position "+position_err+": " + e.msg) 
   print("Error in the position ", POSITION,": ", e)
 finally:
   if mydb.is_connected():
     cursor.close()
     mydb.close()
-    print("MySQL connection closed! Program closed.")
-  else 
-    print("Program closed.")
+    print("MySQL connection closed!")
+    
+    logging.info('Connection closed successfully!')
+  logging.info('Program DataManipulationMySQL is done!')
