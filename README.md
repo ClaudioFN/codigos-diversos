@@ -131,7 +131,9 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
 - <b>Resumo:</b> Prática simples de uso da linguagem de programação C# com banco de dados SQL Server.
 
 1. API com Swagger que executa localmente com conexão para uso com banco de dados SQL Server.
-2. Executar o comando para ter o projeto executando de forma que qualquer alteração seja efetivada ao salvar os arquivos: `dotnet watch run`.
-3. Executar o comando para criar uma migration: `dotnet-ef migrations add InitialCreate`.
-4. Executar o comando que efetiva a criação das tabelas no banco depois de fazer a migration dos dados: `dotnet-ef database update`.
-5. Comandos CRUD disponíveis por endpoints separados.
+2. Executar o comando para criar sua API: `dotnet new webapi -n NOME-DA-SUA-API`.
+3. Executar o comando para ter o projeto executando de forma que qualquer alteração seja efetivada ao salvar os arquivos: `dotnet watch run`.
+4. Executar o comando para criar uma migration: `dotnet-ef migrations add InitialCreate`.
+5. Executar o comando que efetiva a criação das tabelas no banco depois de fazer a migration dos dados: `dotnet-ef database update`.
+6. Comandos CRUD disponíveis por endpoints separados.
+7. Pacotes devem ser instalados de acordo com a requisição de cada um dentro do projeto.
