@@ -1,4 +1,4 @@
-# Códigos Diversos
+# Códigos Diversos - Java | Python | Typescript | C#
 Repositório de códigos de assuntos diversos.
 
 <a id="inicio"></a>
@@ -28,6 +28,9 @@ Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigo
 
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
+- api-contatos: [Acessar Resumo](#apicontatos) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosCSharp/api-contatos" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 **Listagem de códigos**
 
@@ -122,3 +125,13 @@ Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Cod
 - <b>Resumo:</b> Prática simples de uso da linguagem de programação TypeScript.
 
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
+
+> api-contatos <a id="apicontatos"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Prática simples de uso da linguagem de programação C# com banco de dados SQL Server.
+
+1. API com Swagger que executa localmente com conexão para uso com banco de dados SQL Server.
+2. Executar o comando para ter o projeto executando de forma que qualquer alteração seja efetivada ao salvar os arquivos: `dotnet watch run`.
+3. Executar o comando para criar uma migration: `dotnet-ef migrations add InitialCreate`.
+4. Executar o comando que efetiva a criação das tabelas no banco depois de fazer a migration dos dados: `dotnet-ef database update`.
+5. Comandos CRUD disponíveis por endpoints separados.
