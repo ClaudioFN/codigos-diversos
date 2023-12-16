@@ -6,7 +6,7 @@ Repositório de códigos de assuntos diversos.
 Java (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
 - WEBCrowler: [Acessar Resumo](#WEBCrowler) |  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
+Python (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
 
 - AbreProgramasPython: [Acessar Resumo](#AbreProgramasPython) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -29,6 +29,8 @@ Python  (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigo
 - VoiceRecorder: [Acessar Resumo](#VoiceRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - ScreenRecorder: [Acessar Resumo](#ScreenRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ScreenRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+- ProductsAPI: [Acessar Resumo](#ProductsAPI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ProductsAPI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -142,6 +144,14 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
  3. Instalar o pacote Numpy: `pip install numpy`.
  4. Ao executar o código, será solicitado que se digite o nome do arquivo da gravação. Caso o nome já exista, será solicitado outro nome.
  5. Após concluir a gravação, o arquivo estará na pasta onde o código se encontra.
+
+> ProductsAPI.py <a id="ProductsAPI"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> API com acesso a endpoints de uso para CRUD de contatos telefônicos.
+
+ 1. Instalar o pacote OpenCV: `pip install flask`.
+ 2. Executar o código.
+ 4. ...
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
