@@ -151,7 +151,12 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
 
  1. Instalar o pacote OpenCV: `pip install flask`.
  2. Executar o código.
- 4. ...
+ 3. Usar a extensão do Visual Studio Code como o Thunder Client ou externo ao Visual Studio Code como o Postman.
+ 4. Entrar no acesso `http://localhost:100000/products`.
+ 5. Enviar ao endpoint criado para cadastrado (/products/create) no código um JSON semelhante a `{ "name": "PRODUTO-1", "price": "100" }`.
+ 6. Demais endpoints tem comportamento semelhante para tratar desse assunto de acesso.
+ 7. Nenhuma das informações ficam salvas.
+ 8. Cada enpoint tem um método de acesso diferente.
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
