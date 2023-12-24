@@ -32,6 +32,8 @@ Python (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigos
 
 - ProductsAPI: [Acessar Resumo](#ProductsAPI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ProductsAPI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -157,6 +159,15 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
  6. Demais endpoints tem comportamento semelhante para tratar desse assunto de acesso.
  7. Nenhuma das informações ficam salvas.
  8. Cada enpoint tem um método de acesso diferente.
+
+> VoiceChanger.py <a id="VoiceChanger"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Efetua a gravação de tela do computador onde o código se encontra.
+
+ 1. Instalar os pacotes PyDub, SoundDevice e Numpy: `pip install pydub sounddevice numpy`.
+ 2. Caso não tenha, instalar o pacote PyAudio: `pip install pyaudio`.
+ 3. Efetuar a chamada do código via linha de comando para informar as opções de tempo de gração e tom para uso respectivamente: `python VoiceRecorder.py 5 8`
+ 4. Código de teste onde o áudio gravado e reproduzido não fica salvo em local algum.
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
