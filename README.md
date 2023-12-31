@@ -34,6 +34,8 @@ Python (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigos
 
 - VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- TextToAudio: [Acessar Resumo](#TextToAudio) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -168,6 +170,12 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
  2. Caso não tenha, instalar o pacote PyAudio: `pip install pyaudio`.
  3. Efetuar a chamada do código via linha de comando para informar as opções de tempo de gração e tom para uso respectivamente: `python VoiceRecorder.py 5 8`
  4. Código de teste onde o áudio gravado e reproduzido não fica salvo em local algum.
+
+> TextToAudio.py <a id="TextToAudio"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Gera um audio com voz mecanizada a partir de texto.
+
+ 1. Instalar os pacotes ...
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
