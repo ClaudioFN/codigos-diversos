@@ -175,7 +175,13 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
 
 - <b>Resumo:</b> Gera um audio com voz mecanizada a partir de texto.
 
- 1. Instalar os pacotes ...
+ 1. Instalar o pacote gTTS: `pip install gtts`
+ 2. Instalar o pacote PlaySound: `pip install playsound`
+ 3. Em alguns casos a instalação do PlaySound falha e instalar o Wheel costuma resolver: `pip install wheel`
+ 4. Executar o código
+ 5. Durante a execução, será exigido o nome para o arquivo de áudio que será gravado
+ 6. Caso o nome não exista, será exigido o texto que deve ser convertido para áudio
+ 7. Na conclusão desse ponto, o áudio criado a partir do texto será reproduzido
 
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
