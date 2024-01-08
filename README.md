@@ -53,7 +53,7 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
 3. Realizar o import de todos as packages contidas no início de cada classe
 4. Executar a classe StartWebCrawler.java (ter Java e o Java JDK instalados)
 5. Será gerado arquivo de LOG de todas as URLs encontradas na pesquisa de URLs disponíveis a partir da primeira URL fornecida no método `main`
-
+-----
 > AbreProgramasPython.py <a id="AbreProgramasPython"></a> [Voltar ao Início](#inicio)
 
 - <b>Resumo:</b> Informações de como fazer arquivo(s) Python ser(em) executado(s) por um executável.
@@ -182,13 +182,13 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
  5. Durante a execução, será exigido o nome para o arquivo de áudio que será gravado
  6. Caso o nome não exista, será exigido o texto que deve ser convertido para áudio
  7. Na conclusão desse ponto, o áudio criado a partir do texto será reproduzido
-
+-----
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
 - <b>Resumo:</b> Prática simples de uso da linguagem de programação TypeScript.
 
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
-
+-----
 > api-contatos <a id="apicontatos"></a> [Voltar ao Início](#inicio)
 
 - <b>Resumo:</b> Prática simples de uso da linguagem de programação C# com banco de dados SQL Server.
