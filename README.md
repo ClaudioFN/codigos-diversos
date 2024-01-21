@@ -3,13 +3,11 @@ Repositório de códigos de assuntos diversos.
 
 <a id="inicio"></a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="30" />
- (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
 - WEBCrowler: [Acessar Resumo](#WEBCrowler) |  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" />
-(<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJavaScript" target="_blank" rel="noopener noreferrer">Pasta Códigos JavaScript</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJavaScript" target="_blank" rel="noopener noreferrer">Pasta Códigos JavaScript</a>):
 
 - PaymentProducts:  [Acessar Resumo](#PaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/PaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - FunctionsPaymentProducts: [Acessar Resumo](#FunctionsPaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FunctionsPaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -17,8 +15,7 @@ Repositório de códigos de assuntos diversos.
 - FuncoesAuxiliaresImportation: [Acessar Resumo](#FuncoesAuxiliaresImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FuncoesAuxiliaresImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 - MainImportation: [Acessar Resumo](#MainImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/MainImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="30" />
- (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
 
 - AbreProgramasPython: [Acessar Resumo](#AbreProgramasPython) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -48,12 +45,10 @@ Repositório de códigos de assuntos diversos.
 
 - TextToAudio: [Acessar Resumo](#TextToAudio) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" />
- (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" />
-(<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
 - api-contatos: [Acessar Resumo](#apicontatos) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosCSharp/api-contatos" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 **Listagem de códigos**
