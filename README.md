@@ -1,12 +1,24 @@
-# Códigos Diversos - Java | Python | Typescript | C#
+# Códigos Diversos - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="30" /> Java | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" /> JavaScript | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="30" /> Python | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" /> Typescript | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" /> C#
 Repositório de códigos de assuntos diversos.
 
 <a id="inicio"></a>
 
-Java (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" height="30" />
+ (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava" target="_blank" rel="noopener noreferrer">Pasta Códigos Java</a>):
 - WEBCrowler: [Acessar Resumo](#WEBCrowler) |  <a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJava/WEBCrowler" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-Python (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" />
+(<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJavaScript" target="_blank" rel="noopener noreferrer">Pasta Códigos JavaScript</a>):
+
+- PaymentProducts:  [Acessar Resumo](#PaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/PaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- FunctionsPaymentProducts: [Acessar Resumo](#FunctionsPaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FunctionsPaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- ClassesPeople: [Acessar Resumo](#ClassesPeople) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/ClassesPeople.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- FuncoesAuxiliaresImportation: [Acessar Resumo](#FuncoesAuxiliaresImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FuncoesAuxiliaresImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- MainImportation: [Acessar Resumo](#MainImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/MainImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="30" />
+ (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
 
 - AbreProgramasPython: [Acessar Resumo](#AbreProgramasPython) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/AbreProgramasPython.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -34,12 +46,14 @@ Python (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/Codigos
 
 - VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-- TextToAudio: [Acessar Resumo](#TextToAudio) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- TextToAudio: [Acessar Resumo](#TextToAudio) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-Typescript (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" />
+ (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" />
+(<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
 - api-contatos: [Acessar Resumo](#apicontatos) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosCSharp/api-contatos" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 **Listagem de códigos**
@@ -53,6 +67,37 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
 3. Realizar o import de todos as packages contidas no início de cada classe
 4. Executar a classe StartWebCrawler.java (ter Java e o Java JDK instalados)
 5. Será gerado arquivo de LOG de todas as URLs encontradas na pesquisa de URLs disponíveis a partir da primeira URL fornecida no método `main`
+-----
+> PaymentProducts.js <a id="PaymentProducts"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Teste para criar e informar dados de pagamento de produtos.
+
+1. Apenas execute o programa usando a configuração disponível para execução de códigos JS, como o Node.js.
+
+> FunctionsPaymentProducts.js <a id="FunctionsPaymentProducts"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Teste para criar e informar dados de pagamento de produtos para funções JS.
+
+1. Apenas execute o programa usando a configuração disponível para execução de códigos JS, como o Node.js.
+
+> ClassesPeople.js <a id="ClassesPeople"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Teste para criar e informar dados de pessoas em uma classe com uso de métodos / funções.
+
+1. Apenas execute o programa usando a configuração disponível para execução de códigos JS, como o Node.js.
+
+> FuncoesAuxiliaresImportation.js <a id="FuncoesAuxiliaresImportation"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Teste para criar e informar funções.
+
+1. Executar com outro código JS aqui descrito com o nome de MainImportation.js.
+
+> MainImportation.js <a id="MainImportation"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Teste para uso de funções.
+
+1. Apenas execute o programa usando a configuração disponível para execução de códigos JS, como o Node.js.
+
 -----
 > AbreProgramasPython.py <a id="AbreProgramasPython"></a> [Voltar ao Início](#inicio)
 
@@ -182,6 +227,14 @@ C# (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSha
  5. Durante a execução, será exigido o nome para o arquivo de áudio que será gravado
  6. Caso o nome não exista, será exigido o texto que deve ser convertido para áudio
  7. Na conclusão desse ponto, o áudio criado a partir do texto será reproduzido
+
+ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Extrair texto de PDF.
+ 1. Caso ainda esteja sem o pacote PyPDF2, instale: `pip install PyPDF2`
+ 2. Ao executar o código será requisitado por um meno a inserção do nome do PDF a ter o texto extraído que deve estar na pasta onde o código é executado
+ 3. Depois de digitar o nome do PDF, o menu apresentará novas opções para indicar as páginas apara extrair o texto
+ 4. Todo o texto estraído estará nas linhas de comando
 -----
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
