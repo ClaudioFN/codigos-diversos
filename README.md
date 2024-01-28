@@ -48,6 +48,8 @@ Repositório de códigos de assuntos diversos.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- declarations: [Acessar Resumo](#declarations) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
 - api-contatos: [Acessar Resumo](#apicontatos) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosCSharp/api-contatos" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -236,6 +238,12 @@ ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inici
 - <b>Resumo:</b> Prática simples de uso da linguagem de programação TypeScript.
 
 1. Apenas um resumo básico e inicial sobre TypeScript e seus usos para declaração de variáveis
+
+> declarations.ts <a id="declarations"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Nova prática de TypeScript.
+
+1. Resumo com maiores detalhes do que o que foi apresentado no VariableDeclaration
 -----
 > api-contatos <a id="apicontatos"></a> [Voltar ao Início](#inicio)
 
