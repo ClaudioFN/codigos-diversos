@@ -48,7 +48,7 @@ Repositório de códigos de assuntos diversos.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-- declarations: [Acessar Resumo](#declarations) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- declarations: [Acessar Resumo](#declarations) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/declarations.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosCSharp" target="_blank" rel="noopener noreferrer">Pasta Códigos C#</a>)
 - api-contatos: [Acessar Resumo](#apicontatos) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosCSharp/api-contatos" target="_blank" rel="noopener noreferrer">Acessar Código</a>
