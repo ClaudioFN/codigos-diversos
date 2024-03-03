@@ -25,6 +25,8 @@ Repositório de códigos de assuntos diversos.
 
 - DataManipulationMySQL: [Acessar Resumo](#DataManipulationMySQL) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/DataManipulationMySQL.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- ExtractTextFromPDF: [Acessar Resumo](#ExtractTextFromPDF) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ExtractTextFromPDF.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - GraficoInterativo: [Acessar Resumo](#GraficoInterativo) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/GraficoInterativo.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - IoTMachineLeaning: [Acessar Resumo](#IoTMachineLeaning) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/IoTMachineLeaning.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -35,15 +37,18 @@ Repositório de códigos de assuntos diversos.
 
 - PhoneNumberID: [Acessar Resumo](#PhoneNumberID) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/PhoneNumberID.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-- VoiceRecorder: [Acessar Resumo](#VoiceRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
-
 - ScreenRecorder: [Acessar Resumo](#ScreenRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ScreenRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - ProductsAPI: [Acessar Resumo](#ProductsAPI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ProductsAPI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-- VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- RenameFiles: [Acessar Resumo](#RenameFiles) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/RenameFiles.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - TextToAudio: [Acessar Resumo](#TextToAudio) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+- VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
+- VoiceRecorder: [Acessar Resumo](#VoiceRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosTypeScript" target="_blank" rel="noopener noreferrer">Pasta Códigos Typescript</a>):
 - VariableDeclaration: [Acessar Resumo](#VariableDeclaration) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosTypeScript/VariableDeclaration.ts" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -131,6 +136,14 @@ Repositório de códigos de assuntos diversos.
  3. Caso banco deva ser criado durante a execução, alterar a área `Create the Database and Use Database` ou comentar caso contrário
  4. Toda a manipulação já está pronta para uso e o fechamento de conexões será automático na conclusão da execução
 
+ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Extrair texto de PDF.
+ 1. Caso ainda esteja sem o pacote PyPDF2, instale: `pip install PyPDF2`
+ 2. Ao executar o código será requisitado por um meno a inserção do nome do PDF a ter o texto extraído que deve estar na pasta onde o código é executado
+ 3. Depois de digitar o nome do PDF, o menu apresentará novas opções para indicar as páginas apara extrair o texto
+ 4. Todo o texto estraído estará nas linhas de comando
+
  > GraficoInterativo.py <a id="GraficoInterativo"></a> [Voltar ao Início](#inicio)
 
  - <b>Resumo:</b> Teste de criação de gráficos em Python.
@@ -204,14 +217,12 @@ Repositório de códigos de assuntos diversos.
  7. Nenhuma das informações ficam salvas.
  8. Cada enpoint tem um método de acesso diferente.
 
-> VoiceChanger.py <a id="VoiceChanger"></a> [Voltar ao Início](#inicio)
+> RenameFiles.py <a id="RenameFiles"></a> [Voltar ao Início](#inicio)
 
-- <b>Resumo:</b> Efetua a gravação de tela do computador onde o código se encontra.
+- <b>Resumo:</b> Troca o nome de arquivos presentes em um diretório, adicionando um numérico sequencial començando em 1 ao final do nome do arquivo.
 
- 1. Instalar os pacotes PyDub, SoundDevice e Numpy: `pip install pydub sounddevice numpy`.
- 2. Caso não tenha, instalar o pacote PyAudio: `pip install pyaudio`.
- 3. Efetuar a chamada do código via linha de comando para informar as opções de tempo de gração e tom para uso respectivamente: `python VoiceRecorder.py 5 8`
- 4. Código de teste onde o áudio gravado e reproduzido não fica salvo em local algum.
+ 1. Apenas indicar o caminho do diretório em `listdir` e iniciar a execução.
+ 2. Ao concluir a troca dos nomes, será apresentada via mensagem no local da execução o nome original e qual o novo nome do arquivo.
 
 > TextToAudio.py <a id="TextToAudio"></a> [Voltar ao Início](#inicio)
 
@@ -225,13 +236,14 @@ Repositório de códigos de assuntos diversos.
  6. Caso o nome não exista, será exigido o texto que deve ser convertido para áudio
  7. Na conclusão desse ponto, o áudio criado a partir do texto será reproduzido
 
-ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inicio)
+> VoiceChanger.py <a id="VoiceChanger"></a> [Voltar ao Início](#inicio)
 
-- <b>Resumo:</b> Extrair texto de PDF.
- 1. Caso ainda esteja sem o pacote PyPDF2, instale: `pip install PyPDF2`
- 2. Ao executar o código será requisitado por um meno a inserção do nome do PDF a ter o texto extraído que deve estar na pasta onde o código é executado
- 3. Depois de digitar o nome do PDF, o menu apresentará novas opções para indicar as páginas apara extrair o texto
- 4. Todo o texto estraído estará nas linhas de comando
+- <b>Resumo:</b> Efetua a gravação de tela do computador onde o código se encontra.
+
+ 1. Instalar os pacotes PyDub, SoundDevice e Numpy: `pip install pydub sounddevice numpy`.
+ 2. Caso não tenha, instalar o pacote PyAudio: `pip install pyaudio`.
+ 3. Efetuar a chamada do código via linha de comando para informar as opções de tempo de gração e tom para uso respectivamente: `python VoiceRecorder.py 5 8`
+ 4. Código de teste onde o áudio gravado e reproduzido não fica salvo em local algum.
 -----
 > VariableDeclaration.ts <a id="VariableDeclaration"></a> [Voltar ao Início](#inicio)
 
