@@ -219,10 +219,10 @@ ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inici
 
 > RenameFiles.py <a id="RenameFiles"></a> [Voltar ao Início](#inicio)
 
-- <b>Resumo:</b> Troca o nome de arquivos presentes em um diretório, adicionando um numérico sequencial començando em 1 ao final do nome do arquivo.
+- <b>Resumo:</b> Altera o nome de arquivos presentes em um diretório, adicionando um numérico sequencial començando em 1 ao final do nome do arquivo.
 
- 1. Apenas indicar o caminho do diretório em `listdir` e iniciar a execução.
- 2. Ao concluir a troca dos nomes, será apresentada via mensagem no local da execução o nome original e qual o novo nome do arquivo.
+ 1. Apenas indicar o caminho do diretório em `listdir` usando aspas simples conforme o que já está indicado no arquivo atual e iniciar a execução.
+ 2. Ao concluir a alteração dos nomes, será apresentada via mensagem no local da execução o nome original e o novo nome do arquivo.
 
 > TextToAudio.py <a id="TextToAudio"></a> [Voltar ao Início](#inicio)
 
