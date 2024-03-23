@@ -41,7 +41,7 @@ Repositório de códigos de assuntos diversos.
 
 - ProductsAPI: [Acessar Resumo](#ProductsAPI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ProductsAPI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
-- RenameFiles: [Acessar Resumo](#RenameFiles) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/RenameFiles.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+- RenameFiles e RenameFilesMenu: [Acessar Resumo](#RenameFiles) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/RenameFiles.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - TextToAudio: [Acessar Resumo](#TextToAudio) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
@@ -217,12 +217,13 @@ ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inici
  7. Nenhuma das informações ficam salvas.
  8. Cada enpoint tem um método de acesso diferente.
 
-> RenameFiles.py <a id="RenameFiles"></a> [Voltar ao Início](#inicio)
+> RenameFiles.py e RenameFilesMenu.py<a id="RenameFiles"></a> [Voltar ao Início](#inicio)
 
-- <b>Resumo:</b> Altera o nome de arquivos presentes em um diretório, adicionando um numérico sequencial començando em 1 ao final do nome do arquivo.
-
- 1. Apenas indicar o caminho do diretório em `listdir` usando aspas simples conforme o que já está indicado no arquivo atual e iniciar a execução.
- 2. Ao concluir a alteração dos nomes, será apresentada via mensagem no local da execução o nome original e o novo nome do arquivo.
+- <b>Resumo:</b> Altera o nome de arquivos presentes em um diretório.
+ 1. Programa começa pelo arquivo RenameFilesMenu.py.
+ 2. Nele é apresentado um menu que é usado para selecionar um dos itens disponíveis para execução do que se prõpoe o programa.
+ 3. Escolher uma das opções de menu e seguir demais instruções.
+ 4. Ao concluir a alteração dos nomes, será apresentada via mensagem no local da execução o nome original e o novo nome do arquivo.
 
 > TextToAudio.py <a id="TextToAudio"></a> [Voltar ao Início](#inicio)
 
