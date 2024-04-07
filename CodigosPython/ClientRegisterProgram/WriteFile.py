@@ -1,7 +1,11 @@
 """
 Created Date: 29/03/2024
-Last Update: 29/03/2024
+Last Update: 07/04/2024
 Description: Create the file to be used to register data
+Methods: 
+ 1 - file_editing: edition and creation of the file
+ 1.1 - Enter parameters: new_file = identifies if it is a new file | file_name = name of the file | file_columns = name of each column of the file | 
+                         client_details = class Client of details to be inserted in the file
 """
 import Client
 import csv

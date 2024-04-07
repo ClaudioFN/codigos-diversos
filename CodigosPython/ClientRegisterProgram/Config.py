@@ -1,6 +1,6 @@
 """
 Created Date: 06/04/2024
-Last Update: 06/04/2024
+Last Update: 07/04/2024
 Description: To hold details of constants
 """
 
@@ -25,3 +25,12 @@ STATE_TEXT = 'State'
 FU_TEXT = 'FU'
 MAIN_PHONE_TEXT = 'Main Phone'
 MOBILE_PHONE_TEXT = 'Mobile Phone'
+SAVE_LOCATION_TEXT = 'Save location'
+
+# Default save operation
+SAVE_DATA = "DB" # DB | CSV
+
+# Images location
+DB_RADIO_BUTTON_IMAGE = './ClientRegisterProgram/images/icons8-search-database-50.png'
+CSV_RADIO_BUTTON_IMAGE = './ClientRegisterProgram/images/icons8-csv-24.png'
+PROGRAM_LOGO = './ClientRegisterProgram/images/python-powered-h-50x65.png'

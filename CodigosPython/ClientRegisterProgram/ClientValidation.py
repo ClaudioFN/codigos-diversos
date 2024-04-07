@@ -1,7 +1,13 @@
 """
 Created Date: 30/03/2024
-Last Update: 01/04/2024
+Last Update: 07/04/2024
 Description: Validate the data inserted
+Methods: 
+ 1 - doc_format: to format the document typed 
+ 1.1 - Enter parameters: cpf_cnpj_typed = the number of the document of the person typed
+ 2 - client_register_validation: validates the fields of the program
+ 2.1 - Enter parameters: window = Tk class variable | client_labels = identifier of the label where the message will be shown | 
+                         entry_name...entry_mobile_phone = data of the field (entry_name...entry_mobile_phone)
 """
 import Client
 

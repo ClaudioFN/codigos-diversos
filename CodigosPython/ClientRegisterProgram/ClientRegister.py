@@ -1,6 +1,6 @@
 """
 Created Date: 23/03/2024
-Last Update: 06/04/2024
+Last Update: 07/04/2024
 Description: Program to get the details of a person
 """
 import tkinter as tk
@@ -12,10 +12,15 @@ from WriteFile import WriteFile
 from ClientValidation import ClientValidation
 from ClientLabels import ClientLabels
 import Config
+from  ProgramLabels import ProgramLabels
 
 date_format = datetime.today().strftime('%d-%m-%Y')
 file_name = f'client-{date_format}.csv'
 config_definitions = Config
+program_labels = ProgramLabels
+fields_names = [config_definitions.CPF_CNPJ_TEXT, config_definitions.NAME_TEXT, config_definitions.ADDRESS_TEXT, config_definitions.NEIGHBORHOOD_TEXT
+              , config_definitions.CITY_TEXT, config_definitions.STATE_TEXT, config_definitions.FU_TEXT, config_definitions.MAIN_PHONE_TEXT
+              , config_definitions.MOBILE_PHONE_TEXT]
 #regex_email = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 
 
@@ -29,31 +34,25 @@ window = tk.Tk()
 window.geometry("350x290")
 window.title("Client Register")
 
-img = ImageTk.PhotoImage(Image.open('./ClientRegisterProgram/images/python-powered-h-50x65.png'))
+img = ImageTk.PhotoImage(Image.open(config_definitions.PROGRAM_LOGO))
 window.iconphoto(True, img)
 tk.Label(window, image=img)
 
 # Radio Button selection for the place to save the data
-var = ""
-db_img   = ImageTk.PhotoImage(Image.open('./ClientRegisterProgram/images/icons8-search-database-50.png').resize((24,24)), size=(1,1))
-csv_img  = ImageTk.PhotoImage(Image.open('./ClientRegisterProgram/images/icons8-csv-24.png').resize((24,24)), size=(1,1))
-radio_button_db  = tk.Radiobutton(window, text="DB", variable=var, value="DB", image=db_img)
-radio_button_csv = tk.Radiobutton(window, text="CSV", variable=var, value="CSV", image=csv_img)
-tk.Label(window, text="Save location:").grid(row=0, column=0, sticky="w")
+var = tk.StringVar()
+db_img   = ImageTk.PhotoImage(Image.open(config_definitions.DB_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
+csv_img  = ImageTk.PhotoImage(Image.open(config_definitions.CSV_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
+radio_button_db  = tk.Radiobutton(window, text="DB", variable=var.set(config_definitions.SAVE_DATA), value="DB", image=db_img)
+radio_button_csv = tk.Radiobutton(window, text="CSV", variable=var.set(config_definitions.SAVE_DATA), value="CSV", image=csv_img)
+tk.Label(window, text=f"{config_definitions.SAVE_LOCATION_TEXT}:").grid(row=0, column=0, sticky="w")
 
 radio_button_db.grid(row=0, column=1)
 radio_button_csv.grid(row=0, column=2)
 
 #Labels for the window Client Register
-tk.Label(window, text=f"{config_definitions.CPF_CNPJ_TEXT}: ").grid(row=1, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.NAME_TEXT}: ").grid(row=2, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.ADDRESS_TEXT}: ").grid(row=3, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.NEIGHBORHOOD_TEXT}: ").grid(row=4, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.CITY_TEXT}: ").grid(row=5, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.STATE_TEXT}: ").grid(row=6, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.FU_TEXT}: ").grid(row=7, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.MAIN_PHONE_TEXT}: ").grid(row=8, column=0, sticky="w")
-tk.Label(window, text=f"{config_definitions.MOBILE_PHONE_TEXT}: ").grid(row=9, column=0, sticky="w")
+for i, labels_availables in enumerate(fields_names):
+    program_labels.program_labels_definition(window, labels_availables, i + 1)
+
 
 def show_warning(limit_size, field_name):
     messagebox.showwarning('Warning', f'The Limit for {field_name} is {limit_size}')
