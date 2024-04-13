@@ -21,6 +21,8 @@ Repositório de códigos de assuntos diversos.
 
 - CotacaoDolar: [Acessar Resumo](#CotacaoDolar) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- ClientRegisterProgram: [Acessar Resumo](#ClientRegisterProgram) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ClientRegisterProgram" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - CSVtoExcelConverter: [Acessar Resumo](#CSVtoExcelConverter) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CSVtoExcelConverter.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - DataManipulationMySQL: [Acessar Resumo](#DataManipulationMySQL) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/DataManipulationMySQL.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -117,6 +119,17 @@ Repositório de códigos de assuntos diversos.
  2. Link da API em uso no código: [AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas)
  3. O código cria um arquivo com dados do sucesso ou erro de execução (LOG do processo efetuado) na mesma pasta que o código se encontra
  4. Alterar a URL da linha 6 (variável "url") para outras moedas
+
+> ClientRegisterProgram <a id="ClientRegisterProgram"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Programa com GUI para registar informações cadastrais de pessoas. 
+
+ 1. Instalar o pacote Tkinter para uso de interface: `pip install tk`
+ 2. Iniciar o programa executando o arquivo ClientRegister.py
+ 3. Programa, após iniciado, fornece a opção de gravação em banco de dados (ainda não implementado) e arquivo local CSV.
+ 4. Preencher algum dos campos com valor acima do requisitado para o campo gera uma janela de alerta sobre esse ponto.
+ 5. Todos os campos são obrigatórios, exceto pelos campos de telefone onde só um deles deve estar preenchido, e omitir o preechimento fará com que o uma mensagem de alerta apareça ao lado do campo obrigatório.
+ 6. Após preencher tudo e clicar em salvar, tal ação provocará o envio dos dados preenchidos no programa para o local desejado (banco de dados ou CSV).
 
 > CSVtoExcelConverter.py <a id="CSVtoExcelConverter"></a> [Voltar ao Início](#inicio)
 
