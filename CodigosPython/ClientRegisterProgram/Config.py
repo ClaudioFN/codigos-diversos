@@ -1,10 +1,11 @@
 """
 Created Date: 06/04/2024
-Last Update: 07/04/2024
-Description: To hold details of constants
+Last Update: 20/04/2024
+Description: Contains details of constants
 """
+from datetime import datetime
 
-# Fields Sizes
+# Fields Sizes for Validation
 CPF_CNPJ_SIZE = 14
 NAME_SIZE = 25
 ADDRESS_SIZE = 50
@@ -34,3 +35,9 @@ SAVE_DATA = "DB" # DB | CSV
 DB_RADIO_BUTTON_IMAGE = './ClientRegisterProgram/images/icons8-search-database-50.png'
 CSV_RADIO_BUTTON_IMAGE = './ClientRegisterProgram/images/icons8-csv-24.png'
 PROGRAM_LOGO = './ClientRegisterProgram/images/python-powered-h-50x65.png'
+
+# File location
+CSV_LOCATION = '/ClientRegisterProgram/CSV-Files/'
+
+# File name
+FILE_NAME = f'client-{datetime.today().strftime('%d-%m-%Y')}.csv'

@@ -1,11 +1,11 @@
 """
 Created Date: 23/03/2024
-Last Update: 07/04/2024
+Last Update: 20/04/2024
 Description: Program to get the details of a person
 """
 import tkinter as tk
 from tkinter import messagebox
-from datetime import datetime
+
 import os
 from PIL import Image, ImageTk
 from WriteFile import WriteFile
@@ -14,8 +14,6 @@ from ClientLabels import ClientLabels
 import Config
 from  ProgramLabels import ProgramLabels
 
-date_format = datetime.today().strftime('%d-%m-%Y')
-file_name = f'client-{date_format}.csv'
 config_definitions = Config
 program_labels = ProgramLabels
 fields_names = [config_definitions.CPF_CNPJ_TEXT, config_definitions.NAME_TEXT, config_definitions.ADDRESS_TEXT, config_definitions.NEIGHBORHOOD_TEXT
@@ -165,10 +163,11 @@ def execution():
                                                                      entry_neighborhood, entry_city, entry_state, entry_fu, entry_main_phone, 
                                                                      entry_mobile_phone)
     anyFileFound = ''
-    anyFileFound = find(file_name, os.getcwd())    
+    anyFileFound = find(config_definitions.FILE_NAME, os.getcwd() + '/' + config_definitions.CSV_LOCATION)
+    complete_path = os.path.join(os.getcwd() + '/' +config_definitions.CSV_LOCATION, config_definitions.FILE_NAME)
 
     if error_required != "S":
-        WriteFile.file_editing(anyFileFound, file_name, 
+        WriteFile.file_editing(complete_path, config_definitions.FILE_NAME, 
                             ['CPF_CNPJ', 'NAME', 'ADDRESS', 'NEIGHBORHOOD', 'CITY', 'STATE', 'FU', 'MAIN_PHONE', 'MOBILE_PHONE'],
                             client_details)
     else:
