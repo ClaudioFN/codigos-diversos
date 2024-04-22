@@ -1,6 +1,6 @@
 """
 Created Date: 29/03/2024
-Last Update: 20/04/2024
+Last Update: 21/04/2024
 Description: Create the file to be used to register data
 Methods: 
  1 - file_editing: edition and creation of the file
@@ -11,11 +11,11 @@ import Client
 import csv
 
 class WriteFile:
-    def file_editing(new_file = "", file_name = "", file_columns = "", client_details = Client): 
-        print(f'path: {new_file}')
+    def file_editing(new_file = "", file_path = "", file_name = "", file_columns = "", client_details = Client): 
+
         if not new_file:
             try:
-                with open(new_file, 'w+') as file:
+                with open(file_path, 'w+') as file:
                     writer = csv.writer(file)
                     field = file_columns
                     
@@ -29,7 +29,7 @@ class WriteFile:
                 file.close()
         else:
             try:
-                with open(new_file, 'a+') as file:
+                with open(file_path, 'a+') as file:
                     writer = csv.writer(file, lineterminator='\n')
 
                     writer.writerow([client_details.cpf_cnpj, client_details.name, client_details.address, 

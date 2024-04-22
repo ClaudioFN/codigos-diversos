@@ -13,6 +13,7 @@ from ClientValidation import ClientValidation
 from ClientLabels import ClientLabels
 import Config
 from  ProgramLabels import ProgramLabels
+from DatabaseConnection import DatabaseConnection as db
 
 config_definitions = Config
 program_labels = ProgramLabels
@@ -20,13 +21,18 @@ fields_names = [config_definitions.CPF_CNPJ_TEXT, config_definitions.NAME_TEXT, 
               , config_definitions.CITY_TEXT, config_definitions.STATE_TEXT, config_definitions.FU_TEXT, config_definitions.MAIN_PHONE_TEXT
               , config_definitions.MOBILE_PHONE_TEXT]
 #regex_email = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
-
+selected_option = ['']
 
 # To not substitute the file
 def find(name, path):
     for root, dirs, files in os.walk(path):
         if name in files:
             return os.path.join(root, name)
+
+def handle_click(event):
+    selected_option.clear()
+    selected_option.append(event.get())
+
 
 window = tk.Tk()
 window.geometry("350x290")
@@ -37,11 +43,15 @@ window.iconphoto(True, img)
 tk.Label(window, image=img)
 
 # Radio Button selection for the place to save the data
-var = tk.StringVar()
+v = tk.StringVar(window, config_definitions.SAVE_DATA)
+v.trace_add(['read'], lambda name, index, mode, var=v: handle_click(v))
+
+
 db_img   = ImageTk.PhotoImage(Image.open(config_definitions.DB_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
 csv_img  = ImageTk.PhotoImage(Image.open(config_definitions.CSV_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
-radio_button_db  = tk.Radiobutton(window, text="DB", variable=var.set(config_definitions.SAVE_DATA), value="DB", image=db_img)
-radio_button_csv = tk.Radiobutton(window, text="CSV", variable=var.set(config_definitions.SAVE_DATA), value="CSV", image=csv_img)
+radio_button_db  = tk.Radiobutton(window, text="DB", variable=v, value="DB", image=db_img)
+radio_button_csv = tk.Radiobutton(window, text="CSV", variable=v, value="CSV", image=csv_img)
+
 tk.Label(window, text=f"{config_definitions.SAVE_LOCATION_TEXT}:").grid(row=0, column=0, sticky="w")
 
 radio_button_db.grid(row=0, column=1)
@@ -166,12 +176,14 @@ def execution():
     anyFileFound = find(config_definitions.FILE_NAME, os.getcwd() + '/' + config_definitions.CSV_LOCATION)
     complete_path = os.path.join(os.getcwd() + '/' +config_definitions.CSV_LOCATION, config_definitions.FILE_NAME)
 
-    if error_required != "S":
-        WriteFile.file_editing(complete_path, config_definitions.FILE_NAME, 
+    if error_required != "S" and selected_option[0] == 'DB':
+        db.db_connection()
+    elif error_required != "S" and selected_option[0] == 'CSV':
+        WriteFile.file_editing(anyFileFound, complete_path, config_definitions.FILE_NAME, 
                             ['CPF_CNPJ', 'NAME', 'ADDRESS', 'NEIGHBORHOOD', 'CITY', 'STATE', 'FU', 'MAIN_PHONE', 'MOBILE_PHONE'],
                             client_details)
     else:
-        print('Error in one of the fields!')
+        print(f'Error in one of the fields! {selected_option[0]}')
 
 # Register Button
 button = tk.Button(window, text="Register", command = execution)

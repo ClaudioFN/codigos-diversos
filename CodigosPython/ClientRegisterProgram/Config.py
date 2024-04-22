@@ -1,9 +1,10 @@
 """
 Created Date: 06/04/2024
-Last Update: 20/04/2024
+Last Update: 21/04/2024
 Description: Contains details of constants
 """
 from datetime import datetime
+import os
 
 # Fields Sizes for Validation
 CPF_CNPJ_SIZE = 14
@@ -29,7 +30,7 @@ MOBILE_PHONE_TEXT = 'Mobile Phone'
 SAVE_LOCATION_TEXT = 'Save location'
 
 # Default save operation
-SAVE_DATA = "DB" # DB | CSV
+SAVE_DATA = 'DB' # DB | CSV
 
 # Images location
 DB_RADIO_BUTTON_IMAGE = './ClientRegisterProgram/images/icons8-search-database-50.png'
@@ -41,3 +42,7 @@ CSV_LOCATION = '/ClientRegisterProgram/CSV-Files/'
 
 # File name
 FILE_NAME = f'client-{datetime.today().strftime('%d-%m-%Y')}.csv'
+
+# Database Name
+DB_NAME = 'mydatabase.db'
+DB_LOCATION = os.getcwd() + '/ClientRegisterProgram/SQLiteStudio/'
