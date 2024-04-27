@@ -1,6 +1,6 @@
 """
 Created Date: 29/03/2024
-Last Update: 21/04/2024
+Last Update: 23/04/2024
 Description: Create the file to be used to register data
 Methods: 
  1 - file_editing: edition and creation of the file

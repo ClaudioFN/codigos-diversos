@@ -1,6 +1,6 @@
 """
 Created Date: 23/03/2024
-Last Update: 20/04/2024
+Last Update: 23/04/2024
 Description: Program to get the details of a person
 """
 import tkinter as tk
@@ -172,13 +172,16 @@ def execution():
     error_required, client_details = ClientValidation.client_register_validation(window, client_labels, entry_cpf_cnpj, entry_name, entry_address, 
                                                                      entry_neighborhood, entry_city, entry_state, entry_fu, entry_main_phone, 
                                                                      entry_mobile_phone)
-    anyFileFound = ''
-    anyFileFound = find(config_definitions.FILE_NAME, os.getcwd() + '/' + config_definitions.CSV_LOCATION)
-    complete_path = os.path.join(os.getcwd() + '/' +config_definitions.CSV_LOCATION, config_definitions.FILE_NAME)
-
     if error_required != "S" and selected_option[0] == 'DB':
-        db.db_connection()
+        connection = db.db_connection()
+        db.db_insert_data(connection, client_details)
+        if connection:
+            connection.close() 
     elif error_required != "S" and selected_option[0] == 'CSV':
+        anyFileFound = ''
+        anyFileFound = find(config_definitions.FILE_NAME, os.getcwd() + '/' + config_definitions.CSV_LOCATION)
+        complete_path = os.path.join(os.getcwd() + '/' +config_definitions.CSV_LOCATION, config_definitions.FILE_NAME)
+            
         WriteFile.file_editing(anyFileFound, complete_path, config_definitions.FILE_NAME, 
                             ['CPF_CNPJ', 'NAME', 'ADDRESS', 'NEIGHBORHOOD', 'CITY', 'STATE', 'FU', 'MAIN_PHONE', 'MOBILE_PHONE'],
                             client_details)
