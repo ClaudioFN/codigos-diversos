@@ -1,12 +1,12 @@
 """
 Created Date: 21/04/2024
-Last Update: 23/04/2024
-Description: To establish the connection with the database e execute others actions
+Last Update: 28/04/2024
+Description: To establish the connection with the database e execute others actions with the database connection
 """
 import sqlite3
 import Config as conf
 
-class DatabaseConnection:
+class Database:
 
     def db_connection(): 
         connection_completed = False
@@ -25,10 +25,10 @@ class DatabaseConnection:
         except:
             print('Table people not found. Creating the table now.')
             if connection_completed:
-                DatabaseConnection.db_create_table(conn)
+                Database.db_create_table(conn)
                 return conn
             else:
-                print(f'No connection was made!')
+                print(f'No connection with the database was made!')
         return conn
     # Method to Create the table people
     def db_create_table(connection):
@@ -45,10 +45,11 @@ class DatabaseConnection:
         try:
             cpf_data = ''
             cnpj_data = ''
-            if len(client_data.cpf_cnpj) <= 11: 
-                cpf_data = client_data.cpf_cnpj 
+            cpf_cnpj_clean = client_data.cpf_cnpj.replace(".", "").replace("/","").replace("-","")
+            if len(cpf_cnpj_clean) <= 11: 
+                cpf_data = cpf_cnpj_clean
             else:
-                cnpj_data = client_data.cpf_cnpj
+                cnpj_data = cpf_cnpj_clean
             posicao_erro = '1'
             cursor = connection.cursor()
             cursor.execute("""
@@ -82,4 +83,4 @@ class DatabaseConnection:
                 SELECT * FROM people;
                 """)
             for linha in cursor.fetchall():
-                print(f'aqui: {linha}')
+                print(f'Lines in the table: {linha}')

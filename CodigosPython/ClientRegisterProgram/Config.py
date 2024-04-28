@@ -1,6 +1,6 @@
 """
 Created Date: 06/04/2024
-Last Update: 21/04/2024
+Last Update: 28/04/2024
 Description: Contains details of constants
 """
 from datetime import datetime
@@ -13,7 +13,7 @@ ADDRESS_SIZE = 50
 NEIGHBORHOOD_SIZE = 30
 CITY_SIZE = 20
 STATE_SIZE = 14
-FU_SIZE = 20
+FU_SIZE = 2
 MAIN_PHONE_SIZE = 11
 MOBILE_PHONE_SIZE = 11
 

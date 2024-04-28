@@ -1,10 +1,10 @@
 """
 Created Date: 23/03/2024
-Last Update: 23/04/2024
+Last Update: 27/04/2024
 Description: Program to get the details of a person
 """
 import tkinter as tk
-from tkinter import messagebox
+
 
 import os
 from PIL import Image, ImageTk
@@ -12,8 +12,8 @@ from WriteFile import WriteFile
 from ClientValidation import ClientValidation
 from ClientLabels import ClientLabels
 import Config
-from  ProgramLabels import ProgramLabels
-from DatabaseConnection import DatabaseConnection as db
+from ProgramLabels import ProgramLabels
+from Database import Database as db
 
 config_definitions = Config
 program_labels = ProgramLabels
@@ -61,74 +61,31 @@ radio_button_csv.grid(row=0, column=2)
 for i, labels_availables in enumerate(fields_names):
     program_labels.program_labels_definition(window, labels_availables, i + 1)
 
-
-def show_warning(limit_size, field_name):
-    messagebox.showwarning('Warning', f'The Limit for {field_name} is {limit_size}')
-
-warning_button = tk.Button(window, text="Show Warning", command=show_warning)
-def char_count_validation(event):
-    count_cpf_cnpj = len(entry_cpf_cnpj.get())
-    count_name = len(entry_name.get())
-    count_address = len(entry_address.get())
-    count_neighborhood = len(entry_neighborhood.get())
-    count_city = len(entry_city.get())
-    count_state = len(entry_state.get()) 
-    count_fu = len(entry_fu.get()) 
-    count_main_phone = len(entry_main_phone.get()) 
-    count_mobile_phone = len(entry_mobile_phone.get())
-    if count_cpf_cnpj > config_definitions.CPF_CNPJ_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.CPF_CNPJ_SIZE, config_definitions.CPF_CNPJ_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_name > config_definitions.NAME_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.NAME_SIZE, config_definitions.NAME_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_address > config_definitions.ADDRESS_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.ADDRESS_SIZE, config_definitions.ADDRESS_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_neighborhood > config_definitions.NEIGHBORHOOD_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.NEIGHBORHOOD_SIZE, config_definitions.NEIGHBORHOOD_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_city > config_definitions.CITY_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.CITY_SIZE, config_definitions.CITY_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_state > config_definitions.STATE_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.STATE_SIZE, config_definitions.STATE_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_fu > config_definitions.FU_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.FU_SIZE, config_definitions.FU_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_main_phone > config_definitions.MAIN_PHONE_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.MAIN_PHONE_SIZE, config_definitions.MAIN_PHONE_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-    if count_mobile_phone > config_definitions.MOBILE_PHONE_SIZE and event.keysym not in {'BackSpace', 'Delete'}:
-        show_warning(config_definitions.MOBILE_PHONE_SIZE, config_definitions.MOBILE_PHONE_TEXT)
-        return 'break'  # dispose of the event, prevent typing
-
 #Enter fields
 entry_cpf_cnpj = tk.Entry(window)
 entry_cpf_cnpj.grid(row=1, column=1)
-entry_cpf_cnpj.bind('<KeyPress>', char_count_validation)
+entry_cpf_cnpj.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_cpf_cnpj.get()), config_definitions.CPF_CNPJ_TEXT, config_definitions.CPF_CNPJ_SIZE))
 
 label_cpf_cnpj = tk.Label(window, text="-")
 label_cpf_cnpj.grid(row=1, column=2)
 
 entry_name = tk.Entry(window)
 entry_name.grid(row=2, column=1)
-entry_name.bind('<KeyPress>', char_count_validation)
+entry_name.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_name.get()), config_definitions.NAME_TEXT, config_definitions.NAME_SIZE))
 
 label_name = tk.Label(window, text="-")
 label_name.grid(row=2, column=2)
 
 entry_address = tk.Entry(window)
 entry_address.grid(row=3, column=1)
-entry_address.bind('<KeyPress>', char_count_validation)
+entry_address.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_address.get()), config_definitions.ADDRESS_TEXT, config_definitions.ADDRESS_SIZE))
 
 label_address = tk.Label(window, text="-")
 label_address.grid(row=3, column=2)
 
 entry_neighborhood = tk.Entry(window)
 entry_neighborhood.grid(row=4, column=1)
-entry_neighborhood.bind('<KeyPress>', char_count_validation)
+entry_neighborhood.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_neighborhood.get()), config_definitions.NEIGHBORHOOD_TEXT, config_definitions.NEIGHBORHOOD_SIZE))
 
 
 label_neighborhood = tk.Label(window, text="-")
@@ -136,32 +93,32 @@ label_neighborhood.grid(row=4, column=2)
 
 entry_city = tk.Entry(window)
 entry_city.grid(row=5, column=1)
-entry_city.bind('<KeyPress>', char_count_validation)
+entry_city.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_city.get()), config_definitions.CITY_TEXT, config_definitions.CITY_SIZE))
 
 label_city = tk.Label(window, text="-")
 label_city.grid(row=5, column=2)
 
 entry_state = tk.Entry(window)
 entry_state.grid(row=6, column=1)
-entry_state.bind('<KeyPress>', char_count_validation)
+entry_state.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_state.get()), config_definitions.STATE_TEXT, config_definitions.STATE_SIZE))
 
 label_state = tk.Label(window, text="-")
 label_state.grid(row=6, column=2)
 
 entry_fu = tk.Entry(window)
 entry_fu.grid(row=7, column=1)
-entry_fu.bind('<KeyPress>', char_count_validation)
+entry_fu.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_fu.get()), config_definitions.FU_TEXT, config_definitions.FU_SIZE))
 
 label_fu = tk.Label(window, text="-")
 label_fu.grid(row=7, column=2)
 
 entry_main_phone = tk.Entry(window)
 entry_main_phone.grid(row=8, column=1)
-entry_main_phone.bind('<KeyPress>', char_count_validation)
+entry_main_phone.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_main_phone.get()), config_definitions.MAIN_PHONE_TEXT, config_definitions.MAIN_PHONE_SIZE))
 
 entry_mobile_phone = tk.Entry(window)
 entry_mobile_phone.grid(row=9, column=1)
-entry_mobile_phone.bind('<KeyPress>', char_count_validation)
+entry_mobile_phone.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_mobile_phone.get()), config_definitions.MOBILE_PHONE_TEXT, config_definitions.MOBILE_PHONE_SIZE))
 
 label_phones = tk.Label(window, text="-")
 label_phones.grid(row=10, column=1)
@@ -169,7 +126,7 @@ label_phones.grid(row=10, column=1)
 client_labels = ClientLabels(label_cpf_cnpj, label_name, label_address, label_neighborhood, label_city, label_state, label_fu, label_phones)
 
 def execution():
-    error_required, client_details = ClientValidation.client_register_validation(window, client_labels, entry_cpf_cnpj, entry_name, entry_address, 
+    error_required, client_details = ClientValidation.client_register_required_items_validation(window, client_labels, entry_cpf_cnpj, entry_name, entry_address, 
                                                                      entry_neighborhood, entry_city, entry_state, entry_fu, entry_main_phone, 
                                                                      entry_mobile_phone)
     if error_required != "S" and selected_option[0] == 'DB':

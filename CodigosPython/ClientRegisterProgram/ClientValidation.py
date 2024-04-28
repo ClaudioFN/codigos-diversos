@@ -1,15 +1,24 @@
 """
 Created Date: 30/03/2024
-Last Update: 07/04/2024
+Last Update: 28/04/2024
 Description: Validate the data inserted
 Methods: 
  1 - doc_format: to format the document typed 
  1.1 - Enter parameters: cpf_cnpj_typed = the number of the document of the person typed
- 2 - client_register_validation: validates the fields of the program
+ 
+ 2 - client_register_validation: validates if the fields of the program have some value
  2.1 - Enter parameters: window = Tk class variable | client_labels = identifier of the label where the message will be shown | 
                          entry_name...entry_mobile_phone = data of the field (entry_name...entry_mobile_phone)
+ 
+ 3 - char_count_validation: validates if the fields of the program have more characters than the limit set in Config Class
+ 3.1 - Enter parameters: event = event that triggers the call of the method | total_characters = total of characters typed | 
+                         text_entry = name of the field | size_entry = limit of characters defined for the field
+ 
+ 4 - show_warning: show alert message with the name of the field and the limit of characters for that field
+ 4.1 - Enter parameters: limit_size = the limit of characters allowed to the field | field_name = name of the field
 """
 import Client
+from tkinter import messagebox
 
 class ClientValidation: 
     # Format the person document
@@ -31,7 +40,7 @@ class ClientValidation:
         return doc_after_format  
 
     # Validation of the fields
-    def client_register_validation(window, client_labels, entry_cpf_cnpj, entry_name, entry_address, entry_neighborhood, entry_city, entry_state, entry_fu, entry_main_phone, entry_mobile_phone):
+    def client_register_required_items_validation(window, client_labels, entry_cpf_cnpj, entry_name, entry_address, entry_neighborhood, entry_city, entry_state, entry_fu, entry_main_phone, entry_mobile_phone):
         client_details = Client
         error_required = "N"
         
@@ -151,3 +160,10 @@ class ClientValidation:
         
         return error_required, client_details
     
+    def char_count_validation(event, total_characters, text_entry, size_entry):
+        if total_characters > size_entry and event.keysym not in {'BackSpace', 'Delete'}:
+            ClientValidation.show_warning(size_entry, text_entry)
+            return 'break'  # dispose of the event, prevent typing
+        
+    def show_warning(limit_size, field_name):
+        messagebox.showwarning('Warning', f'The Limit for {field_name} is {limit_size}')
