@@ -1,6 +1,6 @@
 """
 Created Date: 06/04/2024
-Last Update: 28/04/2024
+Last Update: 05/05/2024
 Description: Contains details of constants
 """
 from datetime import datetime
@@ -28,6 +28,8 @@ FU_TEXT = 'FU'
 MAIN_PHONE_TEXT = 'Main Phone'
 MOBILE_PHONE_TEXT = 'Mobile Phone'
 SAVE_LOCATION_TEXT = 'Save location'
+DB_TEXT = 'DB'
+CSV_TEXT = 'CSV'
 
 # Default save operation
 SAVE_DATA = 'DB' # DB | CSV
