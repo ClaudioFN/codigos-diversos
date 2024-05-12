@@ -2,7 +2,6 @@
 Created Date: 23/03/2024
 Last Update: 05/05/2024
 Description: Create new labels for the main program
-Obs.: Continuation of ProgramLabels
 Methods: 
  1 - program_labels_definition: Make the new label
  1.1 - Enter parameters: tk_origin = Tk class variable | label_name = name of the label | row_number = number of the row

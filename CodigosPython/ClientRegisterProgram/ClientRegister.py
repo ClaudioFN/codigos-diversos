@@ -1,6 +1,6 @@
 """
 Created Date: 23/03/2024
-Last Update: 05/05/2024
+Last Update: 11/05/2024
 Description: Program to get the details of a person
 """
 import tkinter as tk
@@ -19,9 +19,6 @@ program_labels = ProgramLabelsEntries
 fields_names = [config_definitions.CPF_CNPJ_TEXT, config_definitions.NAME_TEXT, config_definitions.ADDRESS_TEXT, config_definitions.NEIGHBORHOOD_TEXT
               , config_definitions.CITY_TEXT, config_definitions.STATE_TEXT, config_definitions.FU_TEXT, config_definitions.MAIN_PHONE_TEXT
               , config_definitions.MOBILE_PHONE_TEXT]
-buttons_names = [config_definitions.DB_TEXT, config_definitions.CSV_TEXT]
-buttons_w_logo = [{config_definitions.DB_TEXT: config_definitions.DB_RADIO_BUTTON_IMAGE
-                , config_definitions.CSV_TEXT: config_definitions.CSV_RADIO_BUTTON_IMAGE}]
 #regex_email = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 selected_option = ['']
 
@@ -45,9 +42,6 @@ pw.create_window_logo(window, config_definitions.PROGRAM_LOGO)
 v = tk.StringVar(window, config_definitions.SAVE_DATA)
 v.trace_add(['read'], lambda name, index, mode, var=v: handle_click(v))
 
-#for i, buttons_availables in enumerate(buttons_names):
-#    print(buttons_w_logo[0].get(buttons_availables))
-#    pw.create_buttons_w_logo(window, buttons_w_logo[0].get(buttons_availables), buttons_availables, v, i+1)
 db_img   = ImageTk.PhotoImage(Image.open(config_definitions.DB_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
 csv_img  = ImageTk.PhotoImage(Image.open(config_definitions.CSV_RADIO_BUTTON_IMAGE).resize((24,24)), size=(1,1))
 radio_button_db  = tk.Radiobutton(window, text="DB", variable=v, value="DB", image=db_img)
@@ -86,7 +80,6 @@ label_address.grid(row=3, column=2)
 entry_neighborhood = tk.Entry(window)
 entry_neighborhood.grid(row=4, column=1)
 entry_neighborhood.bind('<KeyPress>', lambda event: ClientValidation.char_count_validation(event, len(entry_neighborhood.get()), config_definitions.NEIGHBORHOOD_TEXT, config_definitions.NEIGHBORHOOD_SIZE))
-
 
 label_neighborhood = tk.Label(window, text="-")
 label_neighborhood.grid(row=4, column=2)
