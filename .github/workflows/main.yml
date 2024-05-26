@@ -1,9 +1,14 @@
-name: Upload Python
-
-on:
-  release:
-    types: [published]
-
-permissions:
-  contents: read
-
+- name: Search Text
+  # You may pin to the exact commit or the version.
+  # uses: vrsoftbr/search-text@004b847e1e436a12d85d20f653dd8a2a509aa3e9
+  uses: vrsoftbr/search-text@v1
+  with:
+    # Text to search in files content
+    text: 
+    # File pattern to search files that match (Ex.: *.ts or *.{js.ts} to multiples)
+    include: 
+    # Directory to be ignored (Ex.: node_modules or {node_modules,coverage} to multiples)
+    exclude-dir: # optional
+    # When find, throw a error?
+    error-on-find: 
+          
