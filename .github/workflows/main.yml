@@ -1,0 +1,23 @@
+name: Search Text
+on:
+  push:
+    branches:
+      - 'master'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  search-text:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Search Text
+        uses: vrsoftbr/search-text@v1
+        with:
+            # Text to search in files content
+            text: 'Created'
+            # File pattern to search files that match (Ex.: *.ts or *.{js.ts} to multiples)
+            #include: 
+            # Directory to be ignored (Ex.: node_modules or {node_modules,coverage} to multiples)
+            #exclude-dir: # optional
+            # When find, throw a error?
+            #error-on-find: 'Error-Message'
