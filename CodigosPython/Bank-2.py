@@ -7,31 +7,7 @@ Observation: Using a bank system to operate details of a bank account like accou
 import textwrap
 from abc import ABC, abstractclassmethod, abstractproperty
 from datetime import datetime
-from pathlib import Path
 
-ROOT_PATH = Path(__file__).parent
-
-class ContasIterador:
-    def __init__(self, accounts):
-        self.accounts = accounts
-        self._index = 0
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        try:
-            account = self.accounts[self._index]
-            return f"""\
-            Agência:\t{account.agency}
-            Número:\t\t{account.client_number}
-            Titular:\t{account.client.nome}
-            Saldo:\t\tR$ {account.balance:.2f}
-        """
-        except IndexError:
-            raise StopIteration
-        finally:
-            self._index += 1
 
 class Client:
     def __init__(self, address):
@@ -40,10 +16,6 @@ class Client:
         self.account_index = 0
 
     def make_transaction(self, account, transaction):
-        if len(account.history.transaction_of_day()) >= 2:
-            print("\n@@@ Você excedeu o número de transações permitidas para hoje! @@@")
-            return
-        
         transaction.register(account)
 
     def add_count(self, account):
@@ -56,9 +28,7 @@ class PessoaFisica(Client):
         self.name = name
         self.birth_date = birth_date
         self.cpf = cpf
-        
-    def __repr__(self) -> str:
-        return f"<{self.__class__.__name__}: ('{self.name}', '{self.cpf}')>"
+
 
 class Account:
     def __init__(self, client_number, client):
@@ -121,36 +91,29 @@ class Account:
 
 
 class AccountCorrente(Account):
-    def __init__(self, client_number, client, limite=500, limite_saques=3):
+    def __init__(self, client_number, client, limit=500, limit_withdraw=3):
         super().__init__(client_number, client)
-        self._limite = limite
-        self._limite_saques = limite_saques
-
-    @classmethod
-    def new_account(cls, client, client_numeber, limit, withdraw_limit):
-        return cls(client_numeber, client, limit, withdraw_limit)
+        self._limit = limit
+        self._limit_withdraw = limit_withdraw
 
     def withdraw(self, valor):
-        client_number_saques = len(
+        client_number_withdraw = len(
             [transaction for transaction in self.history.transacoes if transaction["type"] == Withdraw.__name__]
         )
 
         excedeu_limite = valor > self._limite
-        excedeu_saques = client_number_saques >= self._limite_saques
+        excedeu_withdraw = client_number_withdraw >= self._limite_withdraw
 
         if excedeu_limite:
             print("\n@@@ Operação falhou! O valor do saque excede o limite. @@@")
 
-        elif excedeu_saques:
+        elif excedeu_withdraw:
             print("\n@@@ Operação falhou! Número máximo de saques excedido. @@@")
 
         else:
             return super().withdraw(valor)
 
         return False
-    
-    def __repr__(self):
-        return f"<{self.__class__.__name__}: ('{self.agency}', '{self.client_number}', '{self.client.name}')>"
 
     def __str__(self):
         return f"""\
@@ -176,24 +139,24 @@ class History:
             }
         )
         
-    def generate_report(self, type_transaction=None):
-        for transaction in self._transacoes:
-            if (
-                type_transaction is None
-                or transaction["type"].lower() == type_transaction.lower()
-            ):
-                yield transaction
+    #def generate_report(self, type_transaction=None):
+    #    for transaction in self._transacoes:
+    #        if (
+    #            type_transaction is None
+    #            or transaction["type"].lower() == type_transaction.lower()
+    #        ):
+    #            yield transaction
 
-    def transactions_of_day(self):
-        actual_date = datetime.utcnow().date()
-        transactions = []
-        for transaction in self._transactions:
-            date_transaction = datetime.strptime(
-                transaction["date"], "%d-%m-%Y %H:%M:%S"
-            ).date()
-            if actual_date == date_transaction:
-                transactions.append(transaction)
-        return transactions
+    #def transactions_of_day(self):
+    #    actual_date = datetime.utcnow().date()
+    #    transactions = []
+    #    for transaction in self._transactions:
+    #        date_transaction = datetime.strptime(
+    #            transaction["date"], "%d-%m-%Y %H:%M:%S"
+    #        ).date()
+    #        if actual_date == date_transaction:
+    #            transactions.append(transaction)
+    #    return transactions
 
 class Transaction(ABC):
     @property
@@ -235,18 +198,13 @@ class Deposit(Transaction):
         if success_transaction:
             account.history.add_transaction(self)
 
-def log_transaction(func):
-    def envelope(*args, **kwargs):
-        result = func(*args, **kwargs)
-        date_hour = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-        with open(ROOT_PATH / "log.txt", "a") as archive:
-            archive.write(
-                f"[{date_hour}] Função '{func.__name__}' executada com argumentos {args} e {kwargs}. "
-                f"Retornou {result}\n"
-            )
-        return result
-
-    return envelope
+    #def log_transaction(func):
+    #    def envelope(*args, **kwargs):
+    #        result = func(*args, **kwargs)
+    #        print(f"{datetime.now()}: {func.__name__.upper()}")
+    #        return result
+    #
+    #    return envelope
 
 class Main:
     menu = """
@@ -266,8 +224,8 @@ class Main:
         pass
 
     def filter_client(cpf, clients):
-        client_filtered = [client for client in clients if client.cpf == cpf]
-        return client_filtered[0] if client_filtered else None
+        client_filtred = [client for client in clients if client.cpf == cpf]
+        return client_filtred[0] if client_filtred else None
 
     def retrieve_client_account(client):
         if not client.accounts:
@@ -275,8 +233,7 @@ class Main:
             return
 
         return client.accounts[0]
-    
-    @log_transaction
+
     def deposit(clients):
         cpf = input("Informe o CPF do cliente: ")
         client = Main.filter_client(cpf, clients)
@@ -294,7 +251,7 @@ class Main:
 
         client.make_transaction(account, transaction)
 
-    @log_transaction
+    #@log_transaction
     def withdraw(clients):
         cpf = input("Informe o CPF do cliente: ")
         client = Main.filter_client(cpf, clients)
@@ -312,7 +269,7 @@ class Main:
 
         client.make_transaction(account, transaction)
 
-    @log_transaction
+    #@log_transaction
     def show_extrato(clients):
         cpf = input("Informe o CPF do cliente: ")
         client = Main.filter_client(cpf, clients)
@@ -329,20 +286,17 @@ class Main:
         transactions = account.history.transaction
 
         extrato = ""
-        has_transaction = False
-        for transaction in account.history.generate_report():
-            has_transaction = True
-            extrato += f"\n{transaction['date']}\n{transaction['type']}:\n\tR$ {transaction['value']:.2f}"
-
-        if not has_transaction:
-            extrato = "Não foram realizadas movimentações"
-
+        if not transactions:
+            extrato = "Não foram realizadas movimentações."
+        else:
+            for transaction in transactions:
+                extrato += f"\n{transaction['tipo']}:\n\tR$ {transaction['valor']:.2f}"
 
         print(extrato)
         print(f"\nSaldo:\n\tR$ {account.balance:.2f}")
         print("==========================================")
 
-    @log_transaction
+    #@log_transaction
     def create_client(clients):
         cpf = input("Informe o CPF (somente número): ")
         client = Main.filter_client(cpf, clients)
@@ -361,7 +315,7 @@ class Main:
 
         print("\n=== Cliente criado com sucesso! ===")
 
-    @log_transaction
+    #@log_transaction
     def create_account(account_number, clients, accounts):
         cpf = input("Informe o CPF do cliente: ")
         client = Main.filter_client(cpf, clients)
