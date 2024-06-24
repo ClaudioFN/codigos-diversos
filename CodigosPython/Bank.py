@@ -41,7 +41,7 @@ class Client:
 
     def make_transaction(self, account, transaction):
         if len(account.history.transaction_of_day()) >= 2:
-            print("\n@@@ Você excedeu o número de transações permitidas para hoje! @@@")
+            print("\n@@ Você excedeu o número de transações permitidas para hoje! @@")
             return
         
         transaction.register(account)
@@ -97,7 +97,7 @@ class Account:
         excedeu_balance = valor > balance
 
         if excedeu_balance:
-            print("\n@@@ Operação falhou! Você não tem saldo suficiente. @@@")
+            print("\n@@ Operação falhou! Você não tem saldo suficiente. @@")
 
         elif valor > 0:
             self._balance -= valor
@@ -105,7 +105,7 @@ class Account:
             return True
 
         else:
-            print("\n@@@ Operação falhou! O valor informado é inválido. @@@")
+            print("\n@@ Operação falhou! O valor informado é inválido. @@")
 
         return False
 
@@ -114,7 +114,7 @@ class Account:
             self._balance += valor
             print("\n=== Depósito realizado com sucesso! ===")
         else:
-            print("\n@@@ Operação falhou! O valor informado é inválido. @@@")
+            print("\n@@ Operação falhou! O valor informado é inválido. @@")
             return False
 
         return True
@@ -139,10 +139,10 @@ class AccountCorrente(Account):
         excedeu_saques = client_number_saques >= self._limite_saques
 
         if excedeu_limite:
-            print("\n@@@ Operação falhou! O valor do saque excede o limite. @@@")
+            print("\n@@ Operação falhou! O valor do saque excede o limite. @@")
 
         elif excedeu_saques:
-            print("\n@@@ Operação falhou! Número máximo de saques excedido. @@@")
+            print("\n@@ Operação falhou! Número máximo de saques excedido. @@")
 
         else:
             return super().withdraw(valor)
@@ -271,7 +271,7 @@ class Main:
 
     def retrieve_client_account(client):
         if not client.accounts:
-            print("\n@@@ Cliente não possui conta! @@@")
+            print("\n@@ Cliente não possui conta! @@")
             return
 
         return client.accounts[0]
@@ -282,7 +282,7 @@ class Main:
         client = Main.filter_client(cpf, clients)
 
         if not client:
-            print("\n@@@ Cliente não encontrado! @@@")
+            print("\n@@ Cliente não encontrado! @@")
             return
 
         value = float(input("Informe o valor do depósito: "))
@@ -300,7 +300,7 @@ class Main:
         client = Main.filter_client(cpf, clients)
 
         if not client:
-            print("\n@@@ Cliente não encontrado! @@@")
+            print("\n@@ Cliente não encontrado! @@")
             return
 
         value = float(input("Informe o valor do saque: "))
@@ -318,7 +318,7 @@ class Main:
         client = Main.filter_client(cpf, clients)
 
         if not client:
-            print("\n@@@ Cliente não encontrado! @@@")
+            print("\n@@ Cliente não encontrado! @@")
             return
 
         account = Main.retrieve_client_account(client)
@@ -348,7 +348,7 @@ class Main:
         client = Main.filter_client(cpf, clients)
 
         if client:
-            print("\n@@@ Já existe cliente com esse CPF! @@@")
+            print("\n@@ Já existe cliente com esse CPF! @@")
             return
 
         name = input("Informe o nome completo: ")
@@ -367,7 +367,7 @@ class Main:
         client = Main.filter_client(cpf, clients)
 
         if not client:
-            print("\n@@@ Cliente não encontrado, fluxo de criação de conta encerrado! @@@")
+            print("\n@@ Cliente não encontrado, fluxo de criação de conta encerrado! @@")
             return
 
         account = AccountCorrente.new_account(client=client, client_number=account_number)
