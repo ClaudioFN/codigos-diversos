@@ -1,0 +1,22 @@
+pip install fastapi uvicorn sqlalchemy pydantic - dependencias basicas
+
+uvicorn workout_api.main:app --reload - subir o servidor (tem que ter o cmd em uma pasta antes)
+
+docker-compose up -d => subir um docker
+
+pip install alembic => ajeitar algo ae que a mulher não explica
+alembic init alembic => começar isso 
+
+pip install asyncpg => 
+
+pip freeze > requirements.txt => listar itens requisitados para o projeto
+
+create-migrations:
+    @PYTHONPATH=$PYTHONPATH: $(pwd) alembic revision --autogenerate -m $(d) => trocar o d por "init_db"
+
+run-migrations:
+    @PYTHONPATH=$PYTHONPATH: $(pwd) alembic upgrade head
+
+pip install pydantic-settings => mais do mesmo
+
+--->>> criando rotas para categoria
