@@ -1,8 +1,8 @@
 """
 Created Date: 14/07/2024
-Last Update: 22/07/2024
+Last Update: 04/08/2024
 Description: Execute prompt command 'winget update --all --include-unknown' in administrator mode.
-Observation: -
+Observation: Command to update programs
 """
 import ctypes
 import subprocess

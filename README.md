@@ -47,6 +47,8 @@ Repositório de códigos de assuntos diversos.
 
 - TextToAudio: [Acessar Resumo](#TextToAudio) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/TextToAudio.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- update_programms: [Acessar Resumo](#update_programms) | <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/update_programms.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - VoiceChanger: [Acessar Resumo](#VoiceChanger) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceChanger.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - VoiceRecorder: [Acessar Resumo](#VoiceRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/VoiceRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -249,6 +251,12 @@ ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inici
  5. Durante a execução, será exigido o nome para o arquivo de áudio que será gravado
  6. Caso o nome não exista, será exigido o texto que deve ser convertido para áudio
  7. Na conclusão desse ponto, o áudio criado a partir do texto será reproduzido
+
+> update_programms.py <a id="update_programms"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Update via linha de comando dos programas do computador que estejam desatualizados.
+
+ 1. Executar.
 
 > VoiceChanger.py <a id="VoiceChanger"></a> [Voltar ao Início](#inicio)
 
