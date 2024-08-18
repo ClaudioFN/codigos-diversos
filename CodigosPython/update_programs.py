@@ -15,9 +15,9 @@ def is_admin():
 
 def open_cmd_as_admin():
     if is_admin():
-        subprocess.run("cmd /c winget update --all --include-unkown", shell=True)
+        subprocess.run("cmd /c winget update --all --include-unknown", shell=True)
     else:
-        # Solicita privilégios elevados
+        # Solicita privilegios elevados
         ctypes.windll.shell32.ShellExecuteW(None, "runas", "cmd.exe", "/c winget update --all --include-unknown", None, 1)
 
 if __name__ == "__main__":
