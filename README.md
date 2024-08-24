@@ -21,6 +21,8 @@ Repositório de códigos de assuntos diversos.
 
 - Bank: [Acessar Resumo](#Bank) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/Bank.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- Conexao: [Acessar Resumo](#Conexao) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/Conexao.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - CotacaoDolar: [Acessar Resumo](#CotacaoDolar) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/CotacaoDolar.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - ClientRegisterProgram: [Acessar Resumo](#ClientRegisterProgram) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ClientRegisterProgram" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -120,6 +122,12 @@ Repositório de códigos de assuntos diversos.
 - <b>Resumo:</b> Pequeno sistema bancário para resolução de atividades da DIO para obter certificado.
 
  1. Apenas executar.
+
+> Conexao.py <a id="Conexao"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Arquivo com exemplificações para fazer uso de códigos para conexão de banco de dados.
+
+ 1. Usar em conjunto com outras classes / objetos / funções.
 
 > CotacaoDolar.py <a id="CotacaoDolar"></a> [Voltar ao Início](#inicio)
 
