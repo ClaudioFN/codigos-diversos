@@ -20,3 +20,6 @@ class Document:
             raise print('Number of digits is invalid!')
 
 
+if __name__ == '__main__':
+    doc = input("Inform a document (with or without punctuations): ")
+    Document.validate_document(doc)
