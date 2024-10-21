@@ -1,3 +1,9 @@
+"""
+Created Date: 29/09/2023
+Last Update: 20/10/2023
+Description: Validate a document
+Observation: Created initially only for CPF and then changed to validate also the CNPJ.
+"""
 import re
 
 # Document validator
