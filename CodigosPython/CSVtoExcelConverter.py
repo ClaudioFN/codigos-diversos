@@ -1,3 +1,9 @@
+"""
+Created Date: 23/07/2023
+Last Update: 26/10/2024
+Description: Convert CSV to Excel
+Observation: Convert CSV to Excel comes with logging to better locate each step
+"""
 import pandas as pd
 import numpy as np
 from datetime import datetime

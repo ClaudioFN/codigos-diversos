@@ -1,3 +1,9 @@
+"""
+Created Date: 09/07/2023
+Last Update: 26/10/2024
+Description: Get the current value of dollar compared to real
+Observation: Simple case of connection to an API to get the monetary information of Dollar and Real
+"""
 # pip install requests
 import requests
 from datetime import datetime

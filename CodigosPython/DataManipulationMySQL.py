@@ -1,4 +1,9 @@
-
+"""
+Created Date: 23/07/2023
+Last Update: 26/10/2024
+Description: Connect and use data with MySQL
+Observation: With logging to better locate errors and the basic instructions to use MySQL
+"""
 """
 Install the package: pip install mysql-connector-python
 """
