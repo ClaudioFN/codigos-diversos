@@ -1,3 +1,9 @@
+"""
+Created Date: 22/05/2022
+Last Update: 03/11/2024
+Description: DAta manipulation throw a graphic
+Observation: Using a interactive graphic in Python
+"""
 # This Python file uses the following encoding: iso-8859-15 -*-
 import pandas as pd
 import plotly.express as px

@@ -1,3 +1,9 @@
+"""
+Created Date: 12/02/2023
+Last Update: 03/11/2024
+Description: Creating images using de API from OpenAI for images
+Observation: Using a API key and a connection with OpenAI to create images using generative AI
+"""
 # YOU HAVE TO INSTALL IT FIRST: pip install openai
 import openai
 

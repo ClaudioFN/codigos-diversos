@@ -1,3 +1,10 @@
+"""
+Created Date: 27/11/2022
+Last Update: 03/11/2024
+Description: Facial Recognition With IoT
+Observation: Using a Webcam and libraries to do a face recognition
+"""
+
 # -*- coding: utf-8 -*-
 
 # Codigo elaborado com apoio de video aula da Dio - O Novo Mundo das Cidades Inteligentes com Tecnologia de IoT
