@@ -1,3 +1,10 @@
+"""
+Created Date: 09/12/2023
+Last Update: 10/11/2024
+Description: Record the screen with sound and with MKV extension
+Observation: Using a Webcam and libraries to do a face recognition
+"""
+
 # pip install opencv-python 
 # pip install numpy
 # pip install pyautogui

@@ -1,3 +1,9 @@
+"""
+Created Date: 06/01/2024
+Last Update: 10/11/2024
+Description: Convert text to audio
+Observation: Saves the text typed in MP3 format 
+"""
 # pip install gtts
 # pip install playsound
 # Some cases, when the installation of playsound fail, install 'pip install wheel' before the playsound installation

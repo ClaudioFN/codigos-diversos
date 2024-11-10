@@ -1,3 +1,9 @@
+"""
+Created Date: 22/10/2022
+Last Update: 10/11/2024
+Description: Recognizes voices
+Observation: Using the microphone to caught voice chat and transform it into text
+"""
 # This Python file uses the following encoding: iso-8859-15 -*-
 import speech_recognition as sr
 import os 
