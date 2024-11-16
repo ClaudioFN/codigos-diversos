@@ -1,3 +1,9 @@
+"""
+Created Date: 23/12/2023
+Last Update: 16/11/2024
+Description: Change a audio recorded to another tone
+Observation: It can record and change the voice recorded to another tone
+"""
 # pip install pydub sounddevice numpy
 # pip install pyaudio
 

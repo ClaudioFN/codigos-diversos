@@ -1,3 +1,9 @@
+"""
+Created Date: 10/12/2023
+Last Update: 16/11/2024
+Description: Recorder for audio
+Observation: After setting a time limit for recording, the record starts till the time is reached
+"""
 # pip install sounddevice
 # pip install scipy
 
