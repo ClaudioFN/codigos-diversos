@@ -1,3 +1,8 @@
+"""
+Created Date: 30/03/2024
+Last Update: 24/11/2024
+Description: Labels to do the validation
+"""
 import tkinter as tk
 
 class ClientLabelValidation: 
