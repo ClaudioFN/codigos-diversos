@@ -1,3 +1,10 @@
+/*
+Created Date: 14/01/2024
+Last Update: 30/11/2024
+Description: Test creating class in JavaScript
+Observation: Creating a class in JavaScript and showing everything in the console
+*/
+
 console.log('Testing creating classes using JS.');
 
 class People {
