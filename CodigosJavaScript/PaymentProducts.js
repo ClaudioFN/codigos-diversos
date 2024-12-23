@@ -1,3 +1,10 @@
+/*
+Created Date: 14/01/2024
+Last Update: 14/12/2024
+Description: One of the main imports
+Observation: Import to test the price and show how the final value
+*/
+
 console.log('Testing calculation price using JS.')
 // paymentConditions = ['CREDIT', 'DEBIT', 'MONEY', 'PIX']
 
