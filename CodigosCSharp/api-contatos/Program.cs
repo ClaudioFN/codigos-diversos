@@ -1,3 +1,10 @@
+/*
+Created Date: 21/10/2023
+Last Update: 12/01/2025
+Description: Main class of the program
+Observation: Concentrates the calling of the others methods by creating the database connection, controllers and endpoints
+*/
+
 using API_DIO.Context;
 using Microsoft.EntityFrameworkCore;
 
