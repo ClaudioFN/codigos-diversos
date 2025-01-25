@@ -1,3 +1,9 @@
+/*
+Created Date: 21/10/2023
+Last Update: 25/01/2025
+Description: Class for to control contacts for the API
+Observation: Add, alter, find and delete contacts
+*/
 using API_DIO.Context;
 using API_DIO.Entities;
 using Microsoft.AspNetCore.Mvc;
