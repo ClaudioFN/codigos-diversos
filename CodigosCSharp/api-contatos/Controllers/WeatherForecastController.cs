@@ -1,3 +1,9 @@
+/*
+Created Date: 21/10/2023
+Last Update: 08/02/2025
+Description: Class with enumerable for weather classification
+Observation: Return the value for weather classification
+*/
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_DIO.Controllers;
