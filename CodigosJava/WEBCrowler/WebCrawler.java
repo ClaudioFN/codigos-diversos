@@ -1,3 +1,9 @@
+/*
+Created Date: 31/07/2022
+Last Update: 22/02/2025
+Description: Class for searching in the site for pathways
+Observation: Class for visiting each link accessible in the website
+*/
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
