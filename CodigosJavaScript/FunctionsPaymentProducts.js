@@ -1,3 +1,9 @@
+/*
+Created Date: 14/01/2024
+Last Update: 08/03/2025
+Description: Functions for Payment of Products
+Observation: Depending on the way of payment, a discount or a new value can be given
+*/
 console.log('Testing functions using JS.');
 // paymentConditions = ['CREDIT', 'DEBIT', 'MONEY', 'PIX']
 
