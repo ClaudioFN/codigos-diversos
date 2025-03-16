@@ -1,3 +1,9 @@
+'''
+Created Date: 30/06/2024
+Last Update: 16/03/2025
+Description: Class for models in the program
+Observation: Class for the single model
+'''
 from contrib.models import BaseModel
 
 from sqlalchemy import Integer, String

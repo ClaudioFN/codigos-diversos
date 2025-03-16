@@ -17,6 +17,6 @@ create-migrations:
 run-migrations:
     @PYTHONPATH=$PYTHONPATH: $(pwd) alembic upgrade head
 
-pip install pydantic-settings => mais do mesmo
+pip install pydantic-settings
 
 --->>> criando rotas para categoria
