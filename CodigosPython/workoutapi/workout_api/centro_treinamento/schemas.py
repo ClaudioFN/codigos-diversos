@@ -1,3 +1,10 @@
+'''
+Created Date: 30/06/2024
+Last Update: 22/03/2025
+Description: Class for fields and their definition
+Observation: Class for the fields of the program with characteristics for the definition and use in the program
+'''
+
 from typing import Annotated
 
 from pydantic import Field
