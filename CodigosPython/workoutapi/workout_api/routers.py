@@ -1,3 +1,10 @@
+'''
+Created Date: 30/06/2024
+Last Update: 29/04/2025
+Description: Router class
+Observation: Class for the definition of the paths of router
+'''
+
 from fastapi import APIRouter
 from workout_api.atleta.controller import router as atleta
 
