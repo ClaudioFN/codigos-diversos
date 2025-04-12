@@ -2,7 +2,7 @@
 Created Date: 14/07/2024
 Last Update: 04/08/2024
 Description: Execute prompt command 'winget update --all --include-unknown' in administrator mode.
-Observation: Command to update programs
+Observation: Command to update programs throw CMD (last line is available to create a executable)
 """
 import ctypes
 import subprocess
