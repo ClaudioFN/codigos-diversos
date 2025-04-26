@@ -2,6 +2,7 @@
 //Last Update: 28/12/2024
 //Description: Just some use case for TypeScript
 //Observation: Some forms of use to train
+
 var message : string = "Hello World!"
 console.log(message)
 

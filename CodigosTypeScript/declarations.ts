@@ -2,6 +2,7 @@
 //Last Update: 08/12/2024
 //Description: Just some use case for TypeScript
 //Observation: Some forms of use of the language
+
 // Boolean
 let turnedON: boolean = false;
 // String
