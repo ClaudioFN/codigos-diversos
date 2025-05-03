@@ -13,9 +13,13 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosJavaScript" target="_blank" rel="noopener noreferrer">Pasta Códigos JavaScript</a>):
 
 - PaymentProducts:  [Acessar Resumo](#PaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/PaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - FunctionsPaymentProducts: [Acessar Resumo](#FunctionsPaymentProducts) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FunctionsPaymentProducts.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - ClassesPeople: [Acessar Resumo](#ClassesPeople) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/ClassesPeople.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - FuncoesAuxiliaresImportation: [Acessar Resumo](#FuncoesAuxiliaresImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/FuncoesAuxiliaresImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - MainImportation: [Acessar Resumo](#MainImportation) |  <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosJavaScript/MainImportation.js" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="20" /> - (<a href="https://github.com/ClaudioFN/codigos-diversos/tree/main/CodigosPython" target="_blank" rel="noopener noreferrer">Pasta Códigos Python</a>):
