@@ -1,4 +1,9 @@
-
+"""
+Created Date: 10/05/2025
+Last Update: 17/05/2025
+Description: Examples of patterns using loops
+Observation: Simple code to make different shapes like a pyramid and diamond
+"""
 
 rows = 6
 cols = 6
