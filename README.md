@@ -52,6 +52,8 @@
 
 - ScreenRecorder: [Acessar Resumo](#ScreenRecorder) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ScreenRecorder.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
+- Patterns: [Acessar Resumo](#Patterns) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/Patterns.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
+
 - ProductsAPI: [Acessar Resumo](#ProductsAPI) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/ProductsAPI.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
 
 - RenameFiles e RenameFilesMenu: [Acessar Resumo](#RenameFiles) |   <a href="https://github.com/ClaudioFN/codigos-diversos/blob/main/CodigosPython/RenameFiles.py" target="_blank" rel="noopener noreferrer">Acessar Código</a>
@@ -241,6 +243,13 @@ ExtractTextFromPDF.py <a id="ExtractTextFromPDF"></a> [Voltar ao Início](#inici
  3. Instalar o pacote Numpy: `pip install numpy`.
  4. Ao executar o código, será solicitado que se digite o nome do arquivo da gravação. Caso o nome já exista, será solicitado outro nome.
  5. Após concluir a gravação, o arquivo estará na pasta onde o código se encontra.
+
+> Patterns.py <a id="Patterns"></a> [Voltar ao Início](#inicio)
+
+- <b>Resumo:</b> Código simples para exibir padrões de figuras com uso de símbolos como *.
+
+ 1. Executar o código.
+ 2. Checar a área de CMD.
 
 > ProductsAPI.py <a id="ProductsAPI"></a> [Voltar ao Início](#inicio)
 
