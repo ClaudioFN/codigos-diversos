@@ -31,3 +31,14 @@ for i in range(rows):
         else:
             print("O", end=" ")
     print()
+
+
+''' Triangles '''
+print("\n Making Triangles with *")
+# Up part of the triangle 
+for i in range(1, rows + 1) :
+    print("*" * i +  " " * (2 * (rows - i)) + "*" * i)
+
+# Lower part of the diamond
+for i in range(rows, 0, -1):
+    print("*" * i + " " * (2 * (rows - i)) + "*" * i)
