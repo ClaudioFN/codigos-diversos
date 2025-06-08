@@ -33,7 +33,7 @@ for i in range(rows):
     print()
 
 
-''' Triangles '''
+''' Triangles Opposing in the Vertical Orientation '''
 print("\n Making Triangles with *")
 # Up part of the triangle 
 for i in range(1, rows + 1) :
@@ -42,3 +42,13 @@ for i in range(1, rows + 1) :
 # Lower part of the diamond
 for i in range(rows, 0, -1):
     print("*" * i + " " * (2 * (rows - i)) + "*" * i)
+
+''' Triangles Opposing in the Horizontal Orientation '''
+print("\n Making Triangles with *")
+# Up part of the triangle 
+for i in range(1, rows + 1) :
+    print(" " * (rows - i) + "*" * (2 * i - 1))
+
+# Lower part of the diamond
+for i in range(rows - 1, 0, -1):
+    print(" " * (rows - i) + "*" * (2 * i - 1))
