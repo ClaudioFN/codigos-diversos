@@ -5,7 +5,7 @@ Description: Examples of patterns using loops
 Observation: Simple code to make different shapes like a pyramid and diamond
 """
 
-rows = 6
+rows = 14
 cols = 6
 ''' Pyramid '''
 print("\n Making a Pyramid with *")
@@ -52,3 +52,16 @@ for i in range(1, rows + 1) :
 # Lower part of the diamond
 for i in range(rows - 1, 0, -1):
     print(" " * (rows - i) + "*" * (2 * i - 1))
+
+''' June Festival flag in the Horizontal Orientation (needs 14 or a number divisible for 2)'''
+print("\n Making the flag with *")
+print("*" * rows, end="\n")
+i = (rows // 2) - 1
+j = 2
+while i != 0:
+    while j <= (rows - 2):
+        print("*" * i, end="")
+        print(" " * j, end="")
+        print("*" * i, end="\n")
+        i = i - 1
+        j = j + 2
