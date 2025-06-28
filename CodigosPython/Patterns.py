@@ -88,3 +88,11 @@ for i in range(n-1, 0, -1):
         else:
             print(" ", end=" ")
     print()
+
+''' Hollow Square '''
+print("\n Making the hollow square with *")
+for i in range(rows):
+    if i == 0 or i == rows - 1:
+        print('*' * rows)
+    else:
+        print('*' + ' ' * (rows - 2) + '*')
