@@ -96,3 +96,23 @@ for i in range(rows):
         print('*' * rows)
     else:
         print('*' + ' ' * (rows - 2) + '*')
+
+
+''' Hour Glass '''
+print("\n Making the hour glass with *")
+n = 10
+# Upper-Half
+for i in range(n, 0, -1):
+    for j in range(n-i):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        print("*", end="")
+    print()
+
+# Lower-Half
+for i in range(2, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        print("*", end="")
+    print()
