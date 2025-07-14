@@ -116,3 +116,15 @@ for i in range(2, n+1):
     for j in range(1, 2*i):
         print("*", end="")
     print()
+
+''' Hollow Triangle '''
+n = 5
+for i in range(n+1):
+    for j in range(1, i+1):
+        print(" ", end="")
+    for k in range(i, 5):
+        if(i == 0 or k == 4 or k == i):
+            print("*", end=" ")
+        else: 
+            print(" ", end=" ")
+    print()
