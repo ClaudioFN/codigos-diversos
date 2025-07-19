@@ -1,6 +1,6 @@
 """
 Created Date: 10/05/2025
-Last Update: 17/05/2025
+Last Update: 18/07/2025
 Description: Examples of patterns using loops
 Observation: Simple code to make different shapes like a pyramid and diamond
 """
@@ -127,4 +127,15 @@ for i in range(n+1):
             print("*", end=" ")
         else: 
             print(" ", end=" ")
+    print()
+
+
+''' Letter K '''
+n = 7
+for i in range(n):
+    for j in range(n):
+        if(j == 0 or i-j == 3 or i+j == 4):
+            print("*", end=" ")
+        else: 
+            print(end=" ")
     print()
